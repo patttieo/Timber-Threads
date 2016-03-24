@@ -13,119 +13,125 @@
 // -----------------------------------------------------------------------------
 
 .footer {
-  background:#000 url('../img/bg-header-black.jpg') no-repeat center center;
+  background:#000 url('../img/bg-footer.jpg') no-repeat center center;
   background-size: cover; 
   width:100%;
   text-align: center;
-}
-
-.footer-info {
-    @include grid-row($behavior: nest);
-    font-size: 0; // 1
-}
-
-.footer-info-col {
-    @include grid-column(12);
-    color: stencilColor("color-textSecondary");
-    display: inline-block;
-    float: none;
-    font-size: fontSize("base"); // 2
-    margin-bottom: spacing("double");
-    text-align: center;
-    vertical-align: top;
-
-    @include breakpoint("small") {
-        text-align: left;
-        width: width("6/12");
+  .nav a { 
+    text-transform:uppercase; 
+    background:none; 
+    color:#d7d9a0;
+  } 
+  .wrap {
+    .s-logo {
+       margin:2.87rem auto 1.15rem;
+      img { 
+        width: 16rem; 
+      }
+      span { 
+        font-size:1.03rem; 
+        display: block;
+        color:$gold;
+      }
     }
-
-    @include breakpoint("medium") {
-        width: width("4/12");
+    .content-section {
+      padding-bottom:20px;
+      width:100%;
+      display: inline-block;
+      p { 
+        padding:0 10rem;
+        color:#fff; 
+        line-height:1.5;
+      } 
+    }    
+  }
+  .colum-section {
+    .colum { 
+      float:left; 
+      h3 { 
+        color:#fff; 
+        font-size:0.80rem;  
+        margin:0; 
+        padding-bottom:0.29rem; 
+        font-weight:300; 
+      }
     }
-
-    > :first-child {
-        margin-top: 0;
-    }
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-.footer-info-col--small {
-
-    @include breakpoint("medium") {
-        width: width("2/12");
-    }
-}
-
-
-// Content
-// -----------------------------------------------------------------------------
-
-.footer-info-heading {
-    color: $footer-heading-fontColor;
-    font-size: fontSize("base");
-    text-transform: inherit;
-}
-
-.footer-info-list {
-    list-style: none;
-    margin-left: 0;
-
-    a {
-        color: stencilColor("color-textSecondary");
-        text-decoration: none;
-
-        // scss-lint:disable NestingDepth
-        &:hover {
-            color: stencilColor("color-textSecondary--hover");
+    .colum.two {
+      width:100%;
+      text-align: center;
+      .footer-links {
+        ul {
+          padding:0; 
         }
-        // scss-lint:enable NestingDepth
-    }
-}
-
-.footer-copyright {
-    text-align: center;
-
-    @include breakpoint("small") {
-        text-align: left;
-    }
-
-    > .powered-by {
-        color: stencilColor("color-textSecondary");
-        font-size: fontSize("tiny");
-        margin: 0;
-    }
-
-    a {
-        color: stencilColor("color-textSecondary");
-        text-decoration: none;
-
-        // scss-lint:disable NestingDepth
-        &:hover {
-            color: stencilColor("color-textSecondary--hover");
+        li {
+          margin:1rem 0.65rem 2rem;
+          a {
+            color:#fff;
+            text-transform: uppercase;
+          }
+          display: inline-block;
         }
-        // scss-lint:enable NestingDepth
+      }
+      .social-wrapper { 
+        ul {
+          display: inline-block;
+          padding:0; 
+        }
+        li { 
+          float: left;
+          list-style: none;
+          margin:0 0.65rem;
+         }
+        a { 
+          display:inline-block; 
+          width:100%; 
+          height:100%; 
+          text-decoration:none;
+          color:$gold;
+          font-size:1.72rem;
+        }      
+      } 
     }
+    .payment-wrapper {
+      ul {
+        padding:0;
+
+      }
+      li { display:inline-block; }
+      .fa {
+        color:#fff;
+        font-size:1.72rem;
+      }
+    } 
+
+  }  
+  .copyright { color:#fff; }
 }
 
-.footer-payment-icons {
-    height: remCalc(40);
-    margin-top: spacing("single");
 
-    @include breakpoint("medium") {
-        margin-top: spacing("double");
-    }
 
-    .footer-payment-icon {
-        height: 100%;
-        margin: spacing("quarter");
-        vertical-align: middle;
-        width: remCalc(50);
-    }
 
-    svg {
-        fill: stencilColor("icon-color");
+@media (min-width:992px) {
+  // Footer Styles 
+  .footer {
+    .nav a { 
+      text-transform:uppercase; 
+      background:none; 
+      color:#d7d9a0;
     }
+    .wrap {
+      width:77%; 
+      margin:0 auto; 
+      text-align:center;
+      .s-logo {
+        width:95%; 
+        img { 
+          margin:0 auto;   
+        }
+      }
+      .content-section {
+        width:60%;
+      }
+    }     
+  }
 }

@@ -59,11 +59,78 @@ blog:
             </div>
         </div>      
     </div>
-    <div class="main full home-wrapper">
+    <div class="row cta-wrapper">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="cta-wrapper-one ">
+
+                <div class="cta-inner cf">          
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="cta-left ctas">
+
+                                <div class="row top-cta cf">
+                                    <div class="col-sm-6 no-pad">
+                                        <div class="cta-image"></div>
+                                    </div>
+                                    <div class="col-sm-6 no-pad">
+                                        <a href="/collections/womens/">
+                                        <div class="cta-title">
+                                            <div class="inner-title">                           
+                                                <div class="top-hr"></div>
+                                                <div class="cta-logo">
+                                                    <img src="/stencil/theme/1/img/black-double-axe.svg" alt="">
+                                                </div>
+                                                <h2 class="league">Women's</h2>
+                                                <h3>Shop Now</h3>
+                                                <div class="bottom-hr"></div>   
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row bottom-cta cf">
+                                    <div class="col-sm-6 no-pad">
+                                        <a href="/collections/mens/">
+                                        <div class="cta-title">
+                                            <div class="inner-title">                           
+                                                <div class="top-hr"></div>
+                                                <div class="cta-logo">
+                                                    <img src="/stencil/theme/1/img/black-double-axe.svg" alt="">
+                                                </div>
+                                                <h2 class="league">Men's</h2>
+                                                <h3>Shop Now</h3>
+                                                <div class="bottom-hr"></div>   
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 no-pad">
+                                        <div class="cta-image"></div>                                           
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cta-right ctas">
+                                <a href="/collections/fall-winter/">
+                                    <div class="cta-title">
+                                        <h2 class="open-s">The New<span class="league"> Fall/Winter Collection</span></h2>
+                                        <span>Click Here >></span>
+                                        <div class="grey-line"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="home-page-products"> 
         {{#if products.featured}}
             {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
         {{/if}}
-    </div>    
+    </div>
 </div>
 
 {{/partial}}

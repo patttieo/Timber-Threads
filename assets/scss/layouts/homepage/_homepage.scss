@@ -120,23 +120,18 @@
 
 .cta-wrapper {
   background:none;
+  margin:0;
   &.row {
     margin-left:0;
     margin-right:0;
   }
-  margin:0;
+ 
   a {
     text-decoration:none;
     display: block;
     height: 100%;
     width:100%;
   }  
-
-  .col-md-6 {
-    padding-left:0;
-    padding-right:0;
-  }
-  .cta-left,
   .cta-right {
     overflow: hidden;
     height:572px;
@@ -173,7 +168,7 @@
       }
       .cta-image {
           min-height:300px;
-          background: url(cta-womens.jpg) no-repeat center center;
+          background: url(../img/cta-womens.jpg) no-repeat center center;
           background-size: cover;
 
       }      
@@ -194,7 +189,7 @@
       }
        .cta-image {
           min-height:300px;
-          background: url(cta-mens.jpg) no-repeat center center;
+          background: url(../img/cta-mens.jpg) no-repeat center center;
           background-size: cover;
 
       }     
@@ -238,7 +233,10 @@
       .cta-logo {
         position:relative;
         z-index: 2;
+        width: 5rem;
+        background: #fff;
         margin: 20px auto 0;
+        padding:3rem;
       }
       
     }
@@ -247,7 +245,7 @@
 
 
   .cta-right {
-    background: url(cta-big-fallwinter.jpg) no-repeat center center;
+    background: url(../img/cta-big-fallwinter.jpg) no-repeat center center;
     display: block;
     background-size: cover;
     .cta-title {
@@ -295,7 +293,7 @@
     
   }
   .cta-wrapper {
-      background: url(bg-cta.jpg) no-repeat center center;
+      background: url(../img/bg-cta.jpg) no-repeat center center;
       padding:100px 0;
   }
   .carousel-wrapper {
@@ -303,7 +301,7 @@
       top:50%;
     }
     .shop-womens {
-       background-image: url(slide-shop-womens.jpg);
+       background-image: url(../img/slide-shop-womens.jpg);
     }
   }
 

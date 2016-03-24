@@ -5,66 +5,53 @@
     </div>
 </div>
 {{/if}}
-<footer class="footer" role="contentinfo">
-    <div class="container">
-        <section class="footer-info">
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
-                <h5 class="footer-info-heading">{{lang 'footer.navigate'}}</h5>
-                <ul class="footer-info-list">
-                    {{#each pages}}
-                    <li>
-                        <a href="{{url}}">{{name}}</a>
-                    </li>
-                    {{/each}}
-                    <li>
-                        <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
-                    </li>
-                </ul>
-            </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
-                <h5 class="footer-info-heading">{{lang 'footer.categories'}}</h5>
-                <ul class="footer-info-list">
-                    {{#each categories}}
-                        <li>
-                            <a href="{{url}}">{{name}}</a>
-                        </li>
-                    {{/each}}
-                </ul>
-            </article>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="footer-brands">
-                <h5 class="footer-info-heading">{{lang 'footer.brands'}}</h5>
-                <ul class="footer-info-list">
-                    {{#each shop_by_brand}}
-                        <li>
-                            <a href="{{url}}">{{name}}</a>
-                        </li>
-                    {{/each}}
-                    <li><a href="{{urls.brands}}">{{lang 'common.view_all'}}</a></li>
-                </ul>
-            </article>
+    <!-- Begin footer -->
+  <footer class="footer" role="contentinfo">
+    <div id="inner-footer" class="wrap cf">
+      <div class="about-section">
+        <div class="footer-logo s-logo">
+          <img src="/stencil/theme/1/img/logo.svg" alt="">
+          <span class="robot">Quality clothing</span>
+        </div>
+        <div class="content-section">
+          <p>Timber Threads is a clothing company founded in 2009. It started in beautiful Denver, Colorado and has grown to many different places. It started out as something to do on the side but it has grown every year since. This is about art plain, simple, and to the point. Everything is 100% unique and will always stay that way.</p>
+        </div>
+      </div>
+      <div class="colum-section">
+        <div class="colum two">
+        <div class="footer-links">
+          <ul class="left-nav header-item">
+            {{#each pages}}
+            <li>
+                <a href="{{url}}">{{name}}</a>
+            </li>
+            {{/each}}
+          </ul>  
+        </div>
+          <div class="social-wrapper cf">
+            <h3>Follow us on:</h3>
+            <ul>
+              <li><a href="//www.facebook.com/timber.threads.clothing"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="//instagram.com/timberthreads"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="//twitter.com/timber_threads"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="//www.youtube.com/user/timberthreads"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <div class="payment-wrapper cf">
+            <h3>Payment options:</h3>
+            <ul>
+              <li><i class="fa fa-cc-paypal paypal"></i></li>
+              <li><i class="fa fa-cc-mastercard"></i></li>
+              <li><i class="fa fa-cc-discover"></i></li>
+              <li><i class="fa fa-cc-visa"></i></li>
+            </ul>
+            
+          </div>
+          <p class="source-org clearfix copyright">&copy; 2015 Timber Threads Clothing.</p>
+        </div>
 
-            <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">
-                <h5 class="footer-info-heading">{{lang 'footer.info'}}</h5>
-                <address>{{nl2br settings.address}}</address>
-                {{#if settings.phone_number}}
-                    <strong>{{lang 'footer.call_us' phone_number=settings.phone_number}}</strong>
-                {{/if}}
-            </article>
-
-            <article class="footer-info-col" data-section-type="newsletterSubscription">
-                {{#if settings.show_newsletter_box}}
-                    {{> components/common/subscription-form}}
-                {{/if}}
-                {{> components/common/social-links}}
-                {{> components/common/payment-icons}}
-            </article>
-        </section>
-        {{#if theme_settings.show_powered_by}}
-            <div class="footer-copyright">
-                <p class="powered-by">Powered by <a href="http://bigcommerce.com" rel="nofollow">Bigcommerce</a></p>
-            </div>
-        {{/if}}
+      </div>
     </div>
-</footer>
+  </footer>

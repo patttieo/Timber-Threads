@@ -6,11 +6,24 @@
 // Global layouts
 // -----------------------------------------------------------------------------
 
+//  Bootstrap Style
+@import "bootstrap/bootstrap";
+
+
 // Header
 @import "header/header";
 
 // Page
 @import "body/body";
+
+// Common Styles
+@import "common";
+
+// Variable 
+@import "variables";
+
+// Button Styles
+@import "buttons/buttons";
 
 // Footer
 @import "footer/footer";
