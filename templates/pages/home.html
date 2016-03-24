@@ -1,0 +1,70 @@
+---
+products:
+    new:
+        limit: {{theme_settings.homepage_new_products_count}}
+    featured:
+        limit: {{theme_settings.homepage_featured_products_count}}
+    top_sellers:
+        limit: {{theme_settings.homepage_top_products_count}}
+carousel: {{theme_settings.homepage_show_carousel}}
+blog:
+    recent_posts:
+        limit: {{theme_settings.homepage_blog_posts_count}}
+---
+{{#partial "hero"}}
+
+    {{{snippet 'home_content'}}}
+{{/partial}}
+
+{{#partial "page"}}
+
+    {{#each shipping_messages}}
+        {{> components/common/alert-info message}}
+    {{/each}}
+<div class="home-wrapper">
+        <div class="home-slider-wrapper">
+          <div class='carousel-wrapper carousel-one' id='js-home-slider'>
+            <!-- carousel slides -->
+            <div class='carousel-slide big-bg fallwinter-2015 carousel-active'>
+                <a href="/collections/fall-winter/">
+                    <div class="fallwinter-banner">
+                        <div class="slide-content">
+                            <h2 class="league">The FW Collection!</h2>
+                            <div class="button slider-button collection"><a href="/shop">Shop Now</a></div>
+                        </div>
+                    </div>
+                </a>
+            </div>          
+<!--             <div class='carousel-slide big-bg shop-womens'>
+                <div class="slide-content">
+                    <h2 class="league">Women's</h2>
+                    <div class="button slider-button collection"><a href="/collections/womens">Shop Now</a></div>
+                </div>
+            </div>      -->     
+<!--             <div class='carousel-slide big-bg image-two'>
+                <div class="slide-content">
+                    <h2 class="league">Men's</h2>
+                    <div class="button slider-button collection"><a href="/collections/mens">Shop Now</a></div>
+                </div>              
+            </div> -->
+            <!-- carousel nav -->
+            <div class='carousel-nav-wrapper'>
+                <div class='carousel-arrow carousel-arrow-left'><a href="#"><i class="fa fa-arrow-circle-left"></i></a></div>
+                <div class="carousel-container">
+                <div class='carousel-nav-item nav-one carousel-active'><a href="#"></a></div>
+                 <div class='carousel-nav-item nav-two'><a href="#"></a></div>
+                 <div class='carousel-nav-item nav-four'><a href="#"></a></div>
+            </div>
+            <div class='carousel-arrow carousel-arrow-right'><a href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
+            </div>
+        </div>      
+    </div>
+    <div class="main full home-wrapper">
+        {{#if products.featured}}
+            {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+        {{/if}}
+    </div>    
+</div>
+
+{{/partial}}
+{{> layout/base}}

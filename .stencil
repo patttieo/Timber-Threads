@@ -1,0 +1,12 @@
+{
+  "normalStoreUrl": "http://patortiz.mybigcommerce.com/",
+  "port": 3000,
+  "username": "TimberThreads",
+  "token": "fab26d86c61e2081ae91a5bdd8d16364d9b0c696",
+  "customLayouts": {
+    "products": {},
+    "search": {},
+    "brands": {},
+    "categories": {}
+  }
+}
