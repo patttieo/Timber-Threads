@@ -22,98 +22,91 @@
   }  
 }
 
-.carousel-wrapper {
+.carousel {
   width:100%; 
   height:100vh; 
   position: relative;
-
-    .carousel-arrow { 
-      position: absolute; 
-      z-index:2; 
-      top:88%;
-        a { font-size:70px; text-decoration:none; color:#fff;}
-     }
-    .carousel-arrow-right { right:0; }
-    .carousel-slide {
-        width: 100%; 
-        height:100%; 
-        position: absolute; 
-        left:100%;
-        background-attachment: fixed;
-      .slide-content {
-        position:absolute;
-        top:25%;
-        left:5%;
-        text-align: left;
-        a {
-          font-size:3rem;
-          text-decoration:none;
-        }
-      }
-      h2 { 
-        white-space:nowrap; 
-        font-size:6.5rem; 
+  .carousel-arrow { 
+    position: absolute; 
+    z-index:2; 
+    top:88%;
+      a { 
+        font-size:70px; 
+        text-decoration:none; 
         color:#fff;
-        text-transform:uppercase; 
       }
-      .collection { 
-        font-size:1.26rem;
-        padding:10px 14px;; 
-        a { text-decoration:none;  color:#fff; }
+   }
+  .carousel-arrow-right { right:0; }
+  .item {
+      width: 100%; 
+      height:100%; 
+      position: absolute; 
+      left:100%;
+      background-attachment: fixed;
+    .slide-content {
+      position:absolute;
+      top:25%;
+      left:5%;
+      text-align: left;
+      a {
+        font-size:3rem;
+        text-decoration:none;
       }
     }
-    .carousel-nav-wrapper {
-      width:100%; 
-      height: 100%;
+    h2 { 
+      white-space:nowrap; 
+      font-size:6.5rem; 
+      color:#fff;
+      text-transform:uppercase; 
     }
-    .carousel-container {
-      display: none; 
-      width:100px; 
-      margin:0 auto; 
-      top:96%;
-      z-index: 4;
-      position:relative;
+    .collection { 
+      font-size:1.26rem;
+      padding:10px 14px;; 
+      a { text-decoration:none;  color:#fff; }
     }
-    .carousel-nav-item {
-      border-radius: 50%;
-      width:15px;
-      height:15px;
-      background:#000;
-      display:inline-block;
-    }
-    .carousel-active { left:0; }
+  }
+  .carousel-control {
+    background-image:none;
+  }
+  .carousel-nav-wrapper {
+    width:100%; 
+    height: 100%;
+  }
+  .carousel-container {
+    display: none; 
+    width:100px; 
+    margin:0 auto; 
+    top:96%;
+    z-index: 4;
+    position:relative;
+  }
+  .carousel-nav-item {
+    border-radius: 50%;
+    width:15px;
+    height:15px;
+    background:#000;
+    display:inline-block;
+  }
+
+  .carousel-active { 
+    left:0; 
+  }
+
   .fallwinter-2015   {
       background: url(../img/banners/fallwinter-2015-slide.jpg) no-repeat center center;
       background-size: cover;
       background-attachment: fixed;
-  } 
-  .image-summer   {
-      background: url(summer-slide.jpg) no-repeat center center;
-      background-size: cover;
-      background-attachment: fixed;
-  }     
+  }    
   .shop-womens   {
-      background: url(slide-shop-womens-mobile.jpg) no-repeat center center;
+      background: url(../img/banners/slide-shop-womens-mobile.jpg) no-repeat center center;
       background-size: cover;
       background-attachment: fixed;
   }    
-  .image-one  {
-      background: url(girls-home.jpg) no-repeat center center;
-      background-size: cover;
-      background-attachment: fixed;
-  }
-  .image-two  {
-      background: url(slide-shop-mens.jpg) no-repeat center center;
+  .shop-mens {
+      background: url(../img/banners/slide-shop-mens.jpg) no-repeat center center;
       background-size: cover;
      background-attachment: fixed;
   }
-  .image-three  {
-      background: url(fitness-slide.jpg) no-repeat center center;
-      background-size: cover;
-      background-attachment: fixed;
-     h2 { font-size:4.2em; }
-     h3 { font-size:3.2em; text-transform:uppercase; }
-  } 
 }
 
 
@@ -125,7 +118,6 @@
     margin-left:0;
     margin-right:0;
   }
- 
   a {
     text-decoration:none;
     display: block;
@@ -136,8 +128,22 @@
     overflow: hidden;
     height:572px;
   }
-  
-
+  .cta-logo {
+    position:relative;
+    z-index: 2;
+    width: 5rem;
+    background: #fff;
+    margin: 20px auto 0;
+  }
+  .col-md-6 {
+    height:100%;
+  }
+  .cta-title {
+    margin-top:15%;
+  }
+  .cta-image {
+    height:28.6rem
+  }
 
   .cta-left {
     background: #fff;
@@ -167,7 +173,6 @@
         }    
       }
       .cta-image {
-          min-height:300px;
           background: url(../img/cta-womens.jpg) no-repeat center center;
           background-size: cover;
 
@@ -188,7 +193,6 @@
         }
       }
        .cta-image {
-          min-height:300px;
           background: url(../img/cta-mens.jpg) no-repeat center center;
           background-size: cover;
 
@@ -198,13 +202,13 @@
       text-align: center;
       position: relative;
       .inner-title {
-        padding:0 30px;
+        padding:0 1.72rem;
       }
       h2 {
         text-transform: uppercase;
         color: #333333;
-        padding: 20px 0;
-        font-size: 5.2rem;
+        padding: 1rem 0 0;
+        font-size: 6.5rem;
       }
       h3 { 
         color: #999;
@@ -228,16 +232,9 @@
         top: 45px;
       }
       .bottom-hr {
-        bottom: 30px;
+        bottom: 3.32rem;
       }
-      .cta-logo {
-        position:relative;
-        z-index: 2;
-        width: 5rem;
-        background: #fff;
-        margin: 20px auto 0;
-        padding:3rem;
-      }
+
       
     }
   }

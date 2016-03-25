@@ -6,11 +6,15 @@
 // Global layouts
 // -----------------------------------------------------------------------------
 
-//  Bootstrap Style
+//  Bootstrap Styles
 @import "bootstrap/bootstrap";
 
+//  Materialize Styles
+// @import "materialize-src/sass/materialize";
+
+
 //  Responsive Style
-@import "responsive";
+// @import "responsive-base";
 
 // Header
 @import "header/header";

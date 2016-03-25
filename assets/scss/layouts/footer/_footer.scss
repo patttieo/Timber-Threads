@@ -17,11 +17,13 @@
   background-size: cover; 
   width:100%;
   text-align: center;
-  .nav a { 
-    text-transform:uppercase; 
-    background:none; 
-    color:#d7d9a0;
-  } 
+  .nav {
+    a { 
+        text-transform:uppercase; 
+        background:none; 
+        color:#d7d9a0;
+      } 
+    } 
   .wrap {
     .s-logo {
        margin:2.87rem auto 1.15rem;

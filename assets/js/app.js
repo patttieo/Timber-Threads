@@ -22,6 +22,8 @@ import sitemap from './theme/sitemap';
 import subscribe from './theme/subscribe';
 import wishlist from './theme/wishlist';
 
+
+
 const PageClasses = {
     mapping: {
         'pages/account/orders/all': account,

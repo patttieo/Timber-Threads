@@ -21,51 +21,55 @@ blog:
     {{#each shipping_messages}}
         {{> components/common/alert-info message}}
     {{/each}}
-<div class="home-wrapper">
-        <div class="home-slider-wrapper">
-          <div class='carousel-wrapper carousel-one' id='js-home-slider'>
-            <!-- carousel slides -->
-            <div class='carousel-slide big-bg fallwinter-2015 carousel-active'>
-                <a href="/collections/fall-winter/">
-                    <div class="fallwinter-banner">
-                        <div class="slide-content">
-                            <h2 class="league">The FW Collection!</h2>
-                            <div class="button slider-button collection"><a href="/shop">Shop Now</a></div>
-                        </div>
-                    </div>
-                </a>
-            </div>          
-<!--             <div class='carousel-slide big-bg shop-womens'>
-                <div class="slide-content">
-                    <h2 class="league">Women's</h2>
-                    <div class="button slider-button collection"><a href="/collections/womens">Shop Now</a></div>
-                </div>
-            </div>      -->     
-<!--             <div class='carousel-slide big-bg image-two'>
-                <div class="slide-content">
-                    <h2 class="league">Men's</h2>
-                    <div class="button slider-button collection"><a href="/collections/mens">Shop Now</a></div>
-                </div>              
-            </div> -->
-            <!-- carousel nav -->
-            <div class='carousel-nav-wrapper'>
-                <div class='carousel-arrow carousel-arrow-left'><a href="#"><i class="fa fa-arrow-circle-left"></i></a></div>
-                <div class="carousel-container">
-                <div class='carousel-nav-item nav-one carousel-active'><a href="#"></a></div>
-                 <div class='carousel-nav-item nav-two'><a href="#"></a></div>
-                 <div class='carousel-nav-item nav-four'><a href="#"></a></div>
-            </div>
-            <div class='carousel-arrow carousel-arrow-right'><a href="#"><i class="fa fa-arrow-circle-right"></i></a></div>
-            </div>
-        </div>      
-    </div>
+<div id="home-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class='big-bg fallwinter-2015 carousel-active'>
+              <a href="/collections/fall-winter/">
+                  <div class="fallwinter-banner">
+                      <div class="slide-content">
+                          <h2 class="league">The FW Collection!</h2>
+                          <div class="button slider-button collection"><a href="/shop">Shop Now</a></div>
+                      </div>
+                  </div>
+              </a>
+          </div>  
+        </div>
+        <div class="item">
+          <div class='big-bg shop-womens'>
+              <div class="slide-content">
+                  <h2 class="league">Women's</h2>
+                  <div class="button slider-button collection"><a href="/collections/womens">Shop Now</a></div>
+              </div>
+          </div>       
+        </div>
+        <div class="item">
+          <div class='big-bg image-two'>
+              <div class="slide-content">
+                  <h2 class="league">Men's</h2>
+                  <div class="button slider-button collection"><a href="/collections/mens">Shop Now</a></div>
+              </div>              
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+      </a>
+</div>
+
     <div class="row cta-wrapper">
         <div class="col-md-8 col-md-offset-2">
             <div class="cta-wrapper-one ">
 
                 <div class="cta-inner cf">          
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 no-pad">
                             <div class="cta-left ctas">
 
                                 <div class="row top-cta cf">
@@ -110,7 +114,7 @@ blog:
                             </div>
                         </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 no-pad">
                             <div class="cta-right ctas">
                                 <a href="/collections/fall-winter/">
                                     <div class="cta-title">
