@@ -21,121 +21,183 @@ blog:
     {{#each shipping_messages}}
         {{> components/common/alert-info message}}
     {{/each}}
-<div id="home-carousel" class="carousel slide" data-ride="carousel">
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class='big-bg fallwinter-2015 carousel-active'>
-              <a href="/collections/fall-winter/">
-                  <div class="fallwinter-banner">
-                      <div class="slide-content">
-                          <h2 class="league">The FW Collection!</h2>
-                          <div class="button slider-button collection"><a href="/shop">Shop Now</a></div>
-                      </div>
+  <div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class='carousel-content fallwinter-2015 carousel-active'>
+            <a href="/collections/fall-winter/">
+                <div class="fallwinter-banner">
+                    <div class="slide-content">
+                        <h2 class="league">The FW Collection!</h2>
+                        <div class="button slider-button collection"><a href="/shop">Shop Now</a></div>
+                    </div>
+                </div>
+            </a>
+        </div>  
+      </div>
+      <div class="item">
+        <div class='carousel-content shop-womens'>
+            <div class="slide-content">
+                <h2 class="league">Women's</h2>
+                <div class="button slider-button collection"><a href="/collections/womens">Shop Now</a></div>
+            </div>
+        </div>       
+      </div>
+      <div class="item">
+        <div class='carousel-content shop-mens'>
+            <div class="slide-content">
+                <h2 class="league">Men's</h2>
+                <div class="button slider-button collection"><a href="/collections/mens">Shop Now</a></div>
+            </div>              
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <i class="fa fa-angle-right"></i>
+    </a>
+  </div>
+
+  <div class="row cta-wrapper hidden-xs">
+    <div class="col-md-10 col-md-offset-1 col-sm-12">
+      <div class="cta-wrapper-one ">
+        <div class="cta-inner cf">          
+          <div class="row">
+            <div class="col-md-6 col-sm-12 no-pad">
+              <div class="cta-left ctas">
+                <div class="row top-cta cf">
+                  <div class="col-sm-6 no-pad">
+                      <div class="cta-image"></div>
                   </div>
-              </a>
-          </div>  
-        </div>
-        <div class="item">
-          <div class='big-bg shop-womens'>
-              <div class="slide-content">
-                  <h2 class="league">Women's</h2>
-                  <div class="button slider-button collection"><a href="/collections/womens">Shop Now</a></div>
+                  <div class="col-sm-6 no-pad">
+                    <a href="/collections/womens/">
+                      <div class="cta-title">
+                          <div class="inner-title">                           
+                            <div class="top-hr"></div>
+                            <div class="cta-logo">
+                                <img src="{{cdn '/assets/img/black-double-axe.svg'}} " alt="">
+                            </div>
+                            <h2 class="league">Women's</h2>
+                            <h3>Shop Now</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row bottom-cta cf">
+                    <div class="col-sm-6 no-pad">
+                      <a href="/collections/mens/">
+                        <div class="cta-title">
+                          <div class="inner-title">                           
+                            <div class="top-hr"></div>
+                            <div class="cta-logo">
+                                <img src="{{cdn '/assets/img/black-double-axe.svg'}}" alt="">
+                            </div>
+                            <h2 class="league">Men's</h2>
+                            <h3>Shop Now</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-6 no-pad">
+                      <div class="cta-image"></div>                                           
+                    </div>
+                  </div>
+                </div>
               </div>
-          </div>       
-        </div>
-        <div class="item">
-          <div class='big-bg image-two'>
-              <div class="slide-content">
-                  <h2 class="league">Men's</h2>
-                  <div class="button slider-button collection"><a href="/collections/mens">Shop Now</a></div>
-              </div>              
+            <div class="col-md-6 col-sm-12 no-pad">
+                <div class="cta-right ctas">
+                    <a href="/collections/fall-winter/">
+                        <div class="cta-title">
+                            <h2 class="open-s">The New<span class="league"> Fall/Winter Collection</span></h2>
+                            <span>Click Here >></span>
+                            <div class="grey-line"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <i class="fa fa-angle-left"></i>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <i class="fa fa-angle-right"></i>
-      </a>
-</div>
-
-    <div class="row cta-wrapper">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="cta-wrapper-one ">
-
-                <div class="cta-inner cf">          
-                    <div class="row">
-                        <div class="col-md-6 no-pad">
-                            <div class="cta-left ctas">
-
-                                <div class="row top-cta cf">
-                                    <div class="col-sm-6 no-pad">
-                                        <div class="cta-image"></div>
-                                    </div>
-                                    <div class="col-sm-6 no-pad">
-                                        <a href="/collections/womens/">
-                                        <div class="cta-title">
-                                            <div class="inner-title">                           
-                                                <div class="top-hr"></div>
-                                                <div class="cta-logo">
-                                                    <img src="/stencil/theme/1/img/black-double-axe.svg" alt="">
-                                                </div>
-                                                <h2 class="league">Women's</h2>
-                                                <h3>Shop Now</h3>
-                                                <div class="bottom-hr"></div>   
-                                            </div>
-                                        </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row bottom-cta cf">
-                                    <div class="col-sm-6 no-pad">
-                                        <a href="/collections/mens/">
-                                        <div class="cta-title">
-                                            <div class="inner-title">                           
-                                                <div class="top-hr"></div>
-                                                <div class="cta-logo">
-                                                    <img src="/stencil/theme/1/img/black-double-axe.svg" alt="">
-                                                </div>
-                                                <h2 class="league">Men's</h2>
-                                                <h3>Shop Now</h3>
-                                                <div class="bottom-hr"></div>   
-                                            </div>
-                                        </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-6 no-pad">
-                                        <div class="cta-image"></div>                                           
-                                    </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-md-6 no-pad">
-                            <div class="cta-right ctas">
-                                <a href="/collections/fall-winter/">
-                                    <div class="cta-title">
-                                        <h2 class="open-s">The New<span class="league"> Fall/Winter Collection</span></h2>
-                                        <span>Click Here >></span>
-                                        <div class="grey-line"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>  
-    <div class="home-page-products"> 
-        {{#if products.featured}}
-            {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
-        {{/if}}
     </div>
-</div>
+  </div>  
+  <div class="home-page-products">
+    <div class="container">
+      {{#if products.featured}}
+          {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+      {{/if}}
+    </div>
+
+  </div>
+
+  <div class="row cta-wrapper hidden-xs">
+    <div class="col-md-10 col-md-offset-1 col-sm-12">
+      <div class="cta-wrapper-two ">
+        <div class="cta-inner cf">          
+          <div class="row">
+            <div class="col-md-6 col-sm-12 no-pad">
+              <div class="cta-left ctas">
+                <a href="/collections/fall-winter/">
+                  <div class="cta-title">
+                    <h2 class="open-s">Fall/Winter<span class="league">  Lookbook</span></h2>
+                    <span>Click Here >></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 no-pad">
+              <div class="cta-right ctas">
+                <div class="row top-cta cf">
+                  <div class="col-sm-6 no-pad">
+                      <div class="cta-image"></div>
+                  </div>
+                  <div class="col-sm-6 no-pad">
+                    <a href="/collections/womens/">
+                      <div class="cta-title">
+                          <div class="inner-title">                           
+                              <div class="top-hr"></div>
+                              <div class="cta-logo">
+                                   <img src="{{cdn '/assets/img/black-double-axe.svg'}}" alt="">
+                              </div>
+                              <h2 class="league">Blog</h2>
+                              <h3>View Now</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row bottom-cta cf">
+                    <div class="col-sm-6 no-pad">
+                      <a href="/collections/mens/">
+                        <div class="cta-title">
+                          <div class="inner-title">                           
+                            <div class="top-hr"></div>
+                            <div class="cta-logo">
+                                 <img src="{{cdn '/assets/img/black-double-axe.svg'}}" alt="">
+                            </div>
+                            <h2 class="league">About</h2>
+                            <h3>View Now</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm-6 no-pad">
+                      <div class="cta-image"></div>                                           
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
 
 {{/partial}}
 {{> layout/base}}

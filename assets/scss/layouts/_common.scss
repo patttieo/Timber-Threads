@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size:1.2rem;
+    font-size:1.5rem;
     font-weight:300;
     line-height:1.2; 
     background: #fff;
@@ -28,9 +28,7 @@ h1, h2, h3 {
   margin:0;
   color:#363636; 
 }
-.league {
-  font-family: "league-gothic",sans-serif;
-}
+
 li {
   list-style: none;
 }
@@ -41,10 +39,12 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.09rem;
 }
-
+.league {
+  font-family: "league-gothic",sans-serif;
+}
 
 .open-s {
-  font-family: "open-sans-1","open-sans-2",sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 

@@ -23,18 +23,24 @@
 
 .carousel {
   width:100%; 
-  height:100vh; 
+  height:70vh; 
   position: relative;
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-content {
+    height: 100%;
+  }
   .carousel-arrow { 
     position: absolute; 
     z-index:2; 
     top:88%;
-      a { 
-        font-size:70px; 
-        text-decoration:none; 
-        color:#fff;
-      }
-   }
+    a { 
+      font-size:10rem; 
+      text-decoration:none; 
+      color:#fff;
+    }
+  }
   .carousel-arrow-right { right:0; }
   .item {
       width: 100%; 
@@ -54,14 +60,17 @@
     }
     h2 { 
       white-space:nowrap; 
-      font-size:6.5rem; 
+      font-size:5.5rem; 
       color:#fff;
       text-transform:uppercase; 
     }
     .collection { 
-      font-size:1.26rem;
-      padding:10px 14px;; 
-      a { text-decoration:none;  color:#fff; }
+      font-size:1rem;
+      padding:1rem 2rem; 
+      a { 
+      text-decoration:none; 
+       color:#fff; 
+      }
     }
   }
   .carousel-control {
@@ -113,6 +122,17 @@
 .cta-wrapper {
   background:none;
   margin:0;
+  .cta-wrapper-one,
+  .cta-wrapper-two {
+    height:30rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .cta-inner,
+  .row,
+  .col-md-6 {
+    height: 100%;
+  }
   &.row {
     margin-left:0;
     margin-right:0;
@@ -125,173 +145,340 @@
   }  
   .cta-right {
     overflow: hidden;
-    height:572px;
+    height:100%;
   }
   .cta-logo {
     position:relative;
     z-index: 2;
-    width: 5rem;
+    width: 2.5rem;
     background: #fff;
     margin: 20px auto 0;
   }
-  .col-md-6 {
-    height:100%;
+  .top-cta,
+  .bottom-cta {
+    &.row {
+      height:50%;
+    }
+    .col-sm-6 {
+      height: 100%;
+    }
   }
   .cta-title {
-    margin-top:15%;
+    margin-top: 10%;
   }
   .cta-image {
-    height:28.6rem
+    height: 100%;
   }
-
-  .cta-left {
-    background: #fff;
-    .top-cta,
-    .bottom-cta {
-      margin:0;
-      .cta-title {
-        position: relative;
+  .cta-wrapper-one {
+    .cta-left {
+      background: #fff;
+      height: 100%;
+      .top-cta,
+      .bottom-cta {
+        margin:0;
+        .cta-title {
+          position: relative;
+        }
+        .col-xs-6 {
+          padding-left:0;
+          padding-right:0;
+        }
       }
-      .col-xs-6 {
-        padding-left:0;
-        padding-right:0;
-      }
-    }
-    .top-cta {
-      .cta-title {
-        &:before {
-          position: absolute;
-          right: 100%;
-          top: 50%;
-          content:'';
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 12.5px 15px 12.5px 0;
-          border-color: transparent #ffffff transparent transparent;
-        }    
-      }
-      .cta-image {
+      .top-cta {
+        .cta-title {
+          &:before {
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            content:'';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12.5px 15px 12.5px 0;
+            border-color: transparent #ffffff transparent transparent;
+          }    
+        }
+        .cta-image {
           background: url(../img/cta-womens.jpg) no-repeat center center;
           background-size: cover;
-
-      }      
-    }
-    .bottom-cta {
-      .cta-title {
-        &:before {
-          position: absolute;
-          left: 100%;
-          top: 50%;
-          content:'';
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 12.5px 0 12.5px 15px;
-          border-color: transparent transparent transparent #ffffff; 
-        }
+        }      
       }
-       .cta-image {
+      .bottom-cta {
+        .cta-title {
+          &:before {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            content:'';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12.5px 0 12.5px 15px;
+            border-color: transparent transparent transparent #ffffff; 
+          }
+        }
+         .cta-image {
           background: url(../img/cta-mens.jpg) no-repeat center center;
           background-size: cover;
-      }     
-    }
-    .cta-title {
-      text-align: center;
-      position: relative;
-      .inner-title {
-        padding:0 1.72rem;
+        }     
       }
-      h2 {
-        text-transform: uppercase;
-        color: #333333;
-        padding: 1rem 0 0;
-        font-size: 6.5rem;
-      }
-      h3 { 
-        color: #999;
-        background: #fff;
-        padding:5px 10px;
-        margin:0 0 15px;
+      .cta-title {
+        text-align: center;
         position: relative;
-        z-index: 2;
-        display: inline-block;
-        text-transform:uppercase;
-        font-weight:100;
-      }
-      .top-hr,
-      .bottom-hr {
-        background: #999;
-        width: 100%;
-        height: 1px;
-        position: relative;
-      }
-      .top-hr {
-        top: 45px;
-      }
-      .bottom-hr {
-        bottom: 3.32rem;
-      }
+        .inner-title {
+          padding:0 1.72rem;
+        }
+        h2 {
+          text-transform: uppercase;
+          color: #333333;
+          padding: 1rem 0 0;
+          font-size: 3.5rem;
+        }
+        .cta-logo {
+          &:before,
+          &:after {
+            position: absolute;
+            top:50%;
 
-      
+            height: 1px;
+            content:"";
+            width:3rem;
+            background:#999;
+          }
+          &:before {
+            right:120%;
+          }
+          &:after {
+            left:120%;
+          }
+        }
+        h3 { 
+          color: #999;
+          background: #fff;
+          padding:5px 10px;
+          margin:0 0 15px;
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          text-transform:uppercase;
+          font-weight:100;
+          &:before,
+          &:after {
+            position: absolute;
+            top:55%;
+            height: 1px;
+            content:"";
+            width:2rem;
+            background:#999;
+          }
+          &:before {
+            right:100%;
+          }
+          &:after {
+            left:100%;
+          }
+        }
+
+        .top-hr {
+          top: 45px;
+        }
+        .bottom-hr {
+          bottom: 1.52rem;
+        }
+
+        
+      }
+    }
+    .cta-right {
+      background: url(../img/cta-big-fallwinter.jpg) no-repeat center center;
+      display: block;
+      background-size: cover;
+      .cta-title {
+        position: relative;
+        top: 60%;
+        text-align: center;
+        padding:10px 0;
+        background: rgba(255,255,255,0.85);
+        h2 {
+          font-weight: 200;
+          text-transform: uppercase;
+          font-size:24px;
+          span { 
+            font-size:40px;
+            display: block;
+          }
+        }    
+      }
     }
   }
-  
-
-
-  .cta-right {
-    background: url(../img/cta-big-fallwinter.jpg) no-repeat center center;
-    display: block;
-    background-size: cover;
-    .cta-title {
-      position: relative;
-      top: 60%;
-      text-align: center;
-      padding:10px 0;
-      background: rgba(255,255,255,0.85);
-      h2 {
-        font-weight: 200;
-        text-transform: uppercase;
-        font-size:24px;
-        span { 
-          font-size:40px;
-          display: block;
+  .cta-wrapper-two {
+    .cta-right {
+      background: #fff;
+      height: 100%;
+      .top-cta,
+      .bottom-cta {
+        margin:0;
+        .cta-title {
+          position: relative;
         }
-      }    
+        .col-xs-6 {
+          padding-left:0;
+          padding-right:0;
+        }
+      }
+      .top-cta {
+        .cta-title {
+          &:before {
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            content:'';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12.5px 15px 12.5px 0;
+            border-color: transparent #ffffff transparent transparent;
+          }    
+        }
+        .cta-image {
+          background: url(../img/cta-womens.jpg) no-repeat center center;
+          background-size: cover;
+      }
+      .bottom-cta {
+        .cta-title {
+          &:before {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            content:'';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12.5px 0 12.5px 15px;
+            border-color: transparent transparent transparent #ffffff; 
+          }
+        }
+         .cta-image {
+          background: url(../img/cta-mens.jpg) no-repeat center center;
+          background-size: cover;
+        }     
+      }
+      .cta-title {
+        text-align: center;
+        position: relative;
+        .inner-title {
+          padding:0 1.72rem;
+        }
+        h2 {
+          text-transform: uppercase;
+          color: #333333;
+          padding: 1rem 0 0;
+          font-size: 3.5rem;
+        }
+        .cta-logo {
+          &:before,
+          &:after {
+            position: absolute;
+            top:50%;
+
+            height: 1px;
+            content:"";
+            width:3rem;
+            background:#999;
+          }
+          &:before {
+            right:120%;
+          }
+          &:after {
+            left:120%;
+          }
+        }
+        h3 { 
+          color: #999;
+          background: #fff;
+          padding:5px 10px;
+          margin:0 0 15px;
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          text-transform:uppercase;
+          font-weight:100;
+          &:before,
+          &:after {
+            position: absolute;
+            top:55%;
+            height: 1px;
+            content:"";
+            width:2rem;
+            background:#999;
+          }
+          &:before {
+            right:100%;
+          }
+          &:after {
+            left:100%;
+          }
+        }
+
+        .top-hr {
+          top: 45px;
+        }
+        .bottom-hr {
+          bottom: 1.52rem;
+        }
+
+        
+      }
+    }
+    .cta-left {
+      height: 100%;
+      background: url(../img/cta-big-fallwinter.jpg) no-repeat center center;
+      display: block;
+      background-size: cover;
+      .cta-title {
+        position: relative;
+        top: 50%;
+        text-align: center;
+        padding:10px 0;
+        background: rgba(255,255,255,0.85);
+        h2 {
+          font-weight: 200;
+          text-transform: uppercase;
+          font-size:24px;
+          span { 
+            font-size:4rem;
+            display: block;
+          }
+        }    
+      }
     }
   }
 }
 
-.products-wrapper {
-  .products {
-    .product {
-      .details {
-        .title {
-          color:#b32424;
-          font-size:25px;
-        }
-        .price {
-          color:#000;
-          font-size:32px;
-        }
-      }
-    }
+.home-page-products {
+  padding:4rem 0;
+  h2 {
+    font-size:6rem;
+    text-transform: uppercase; 
+    margin:3rem 0 5rem;
   }
 }
-
 
 @media (min-width:992px) { 
   .home-wrapper {
     .home-page-products {
       padding:0 7%;
     }
-    
   }
   .cta-wrapper {
       background: url(../img/bg-cta.jpg) no-repeat center center;
       padding:100px 0;
   }
   .carousel-wrapper {
+    .cta-wrapper-one,
+    .cta-wrapper-two {
+      height: 30rem;
+    }
     .carousel-arrow { 
       top:50%;
     }

@@ -61,7 +61,8 @@
         border-bottom:1px #fec346 solid;
       }
     }
-  } 
+
+  }  
 
 
   .main-nav > ul li ul {
@@ -94,6 +95,34 @@
       margin:0 auto; 
       padding-bottom:5px; 
       width: 18rem; 
+    }
+  }  
+  .sub-header {
+    height: 2rem;
+    background:#000;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    line-height: 2rem;
+    .social-links,
+    .store-links {
+      li {
+        margin:0 0.5rem;
+        float:left; 
+        color:#fff;
+        font-family: $league;
+        font-size:1rem;
+        a {
+          font-family: $league;
+          color:#fff;
+        }
+      }
+    }
+    .social-links {
+      float: left;
+    }
+    .store-links {
+      float: right;
     }
   }    
 }
