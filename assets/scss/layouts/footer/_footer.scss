@@ -41,7 +41,6 @@
       width:100%;
       display: inline-block;
       p { 
-        padding:0 10rem;
         color:#fff; 
         line-height:1.5;
       } 
@@ -52,7 +51,7 @@
       float:left; 
       h3 { 
         color:#fff; 
-        font-size:0.80rem;  
+        font-size:1rem;  
         margin:0; 
         padding-bottom:0.29rem; 
         font-weight:300; 
@@ -90,7 +89,7 @@
           height:100%; 
           text-decoration:none;
           color:$gold;
-          font-size:1.72rem;
+          font-size:2rem;
         }      
       } 
     }
@@ -102,12 +101,14 @@
       li { display:inline-block; }
       .fa {
         color:#fff;
-        font-size:1.72rem;
+        font-size:2rem;
       }
     } 
 
   }  
-  .copyright { color:#fff; }
+  .copyright { color:#fff;
+    padding:2rem 0;
+  }
 }
 
 

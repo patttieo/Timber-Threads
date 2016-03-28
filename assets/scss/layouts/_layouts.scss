@@ -12,21 +12,20 @@
 //  Materialize Styles
 // @import "materialize-src/sass/materialize";
 
+// Common Styles
+@import "common";
+
+// Variable 
+@import "variables";
 
 //  Responsive Style
-// @import "responsive-base";
+@import "responsive-base";
 
 // Header
 @import "header/header";
 
 // Page
 @import "body/body";
-
-// Common Styles
-@import "common";
-
-// Variable 
-@import "variables";
 
 // Button Styles
 @import "buttons/buttons";
@@ -39,6 +38,10 @@
 
 // Home Page
 @import "homepage/homepage";
+
+
+// Globa Style Overrides
+@import "overrides";
 
 
 // Page content layouts
