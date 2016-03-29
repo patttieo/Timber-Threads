@@ -10,13 +10,36 @@
 //
 // -----------------------------------------------------------------------------
 
+
+// Product Default styles
+.product {
+    text-transform: uppercase;
+    text-align:center;
+      .card-body {
+        text-align:center;
+        h4 {
+            min-height: 2.3rem;
+            a {
+            font-size:1.2em;
+            font-weight: 600;
+            color:$red;     
+            }
+        }
+        .card-text {
+            font-size:1.2rem;
+            font-weight: bold;
+            color:$dark-gray;
+        }
+    }
+}
+
 .productGrid {
 
     @include u-listBullets("none");
     @include grid-row($behavior: "nest");
     font-size: 0; // 1
     margin-bottom: spacing("single");
-
+ 
     .product {
         @include grid-column(6, $float: none);
         display: inline-block;
@@ -31,7 +54,11 @@
             width: grid-calc(3, $total-columns);
         }
     }
+
 }
+
+
+
 
 
 // Product when sidebar is present
@@ -85,6 +112,7 @@
         margin-bottom: spacing("double");
         padding: 0;
         width: 100%;
+
     }
 
     .card {

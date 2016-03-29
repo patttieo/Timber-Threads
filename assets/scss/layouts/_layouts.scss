@@ -40,8 +40,9 @@
 @import "homepage/homepage";
 
 
-// Globa Style Overrides
-@import "overrides";
+// Category Page Styles
+@import "category";
+
 
 
 // Page content layouts
@@ -67,3 +68,7 @@
 
 // Account
 @import "account/account";
+
+
+// Globa Style Overrides
+@import "overrides";

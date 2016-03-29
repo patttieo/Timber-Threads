@@ -16,25 +16,40 @@ category:
 
 {{#partial "page"}}
 
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
 {{#if category.image}}
     <img src="{{getImage category.image 'zoom'}}">
 {{/if}}
-<h1 class="page-heading">{{category.name}}</h1>
-{{{category.description}}}
-{{{snippet 'categories'}}}
-<div class="page">
-    <aside class="page-sidebar" id="faceted-search-container">
-        {{> components/category/sidebar}}
-    </aside>
+<h1 class="page-heading" style="display:none;">{{category.name}}</h1>
 
-    <main class="page-content" id="product-listing-container">
-        {{#if category.products}}
-            {{> components/category/product-listing}}
-        {{else}}
-            <p>{{lang 'categories.no_products'}}</p>
-        {{/if}}
-    </main>
+{{{snippet 'categories'}}}
+<div class="page category-wrapper">
+    {{{category.description}}}
+    <div class="container">
+        <main class="page-content" id="product-listing-container">
+            <div class="category-option-wrap">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                        <div class="col-xs-6">
+                            {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+                        </div>   
+                        <div class="col-xs-6">
+                            {{> components/products/filter sort=pagination.category.sort}} 
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            {{#if category.products}}
+                {{> components/category/product-listing}}
+            {{else}}
+                <p>{{lang 'categories.no_products'}}</p>
+            {{/if}}
+        </main>
+    </div>
+
 </div>
 
 {{/partial}}

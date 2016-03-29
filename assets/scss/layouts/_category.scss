@@ -1,0 +1,190 @@
+.category-wrapper {
+  padding-bottom:30px;
+  .collection-banner-wrapper {
+    margin-right:0;
+    margin-left:0;
+  }
+  .collection-banner {
+    height:25rem;
+    width:100%;
+    overflow: hidden;
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
+  .womens-banner {
+    background:url(../img/mobile-womens-banner.jpg) no-repeat center top;    
+  }  
+  .mens-banner {
+    background:url(../img/mobile-mens-banner.jpg) no-repeat center top;    
+  }
+  .breadcrumbs {
+    background:none;
+    padding:0; 
+    margin:0;
+    text-align:right;
+    position:relative;
+    &:after {
+      content:"";
+      left:105%;
+      top:0;
+      width: 1px;
+      height:100%;
+      background:$dark-gray;
+      position: absolute;
+    }
+    .breadcrumb {
+      line-height:1;
+    }
+    li {
+      background:none;
+      padding:0; 
+      margin:0;
+      &:after {
+        color: #989898;
+        content: "/";
+        margin: 0;
+        position: relative;
+        top: 1px;
+      }      
+      &.is-active {
+      font-size:6rem;
+      color:$dark-gray;
+      text-transform: uppercase;
+      font-family: $league;
+      display: block;
+        &:after,
+        &:before {
+          display: none;
+        }
+      } 
+    }
+    a {
+      font-size:14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color:$red;     
+    }
+  }
+  .form-fieldset {
+    text-transform: uppercase;
+    .form-field {
+      border:none;
+      border-radius:none;
+    }
+    label {
+      font-size:1rem;
+      display: block;
+      padding:0;
+    }
+    select {
+      font-size:3rem;
+      text-transform: uppercase;
+      color:$red;
+      position: relative;
+      height:auto;
+
+      
+      font-family: $league;
+      &.form-select--small,
+      &.form-select--date {
+        max-height: none;
+        padding:0;
+        line-height: 2rem;
+      }
+      &.form-control {
+        box-shadow:none;
+        width:auto;
+        padding:6px 0;
+        border:none;
+        border-radius: 0;
+      }
+      option {
+        padding:0;
+        font-size:12px;
+      }
+    }
+  }
+
+  .pagination-wrapper {
+    text-align: center;
+    .pagination {
+      width:300px;
+    }
+    .page {
+      margin:0 5px;
+      &.current {
+        font-size:16px;
+        background::$red;
+        color:#fff;
+        border-radius:50%;
+        padding:5px 10px;
+      }
+      a {
+        border-radius:50%;
+        padding:5px 10px;
+        font-size: 16px;
+        background:#f0d3d3;
+        color:#fff;
+      }
+    }
+    .prev,
+    .next {
+      float: none;
+      border:none;
+      a {
+        margin:0 10px;
+        color:$red;
+        font-size:18px;
+      }
+
+    }
+  }
+  .collection-container {
+    margin:60px auto 0;
+  }
+}
+.collections {
+  .price,
+  .span12 h1 {
+    display: none;
+  }
+  .products {
+    margin-top:100px;
+  }
+  .title {
+    font-size:30px;
+    margin-top:20px;
+  }
+}
+@media (min-width:992px) {
+
+  .collection-wrapper {
+    .collection-banner {
+      height: 60rem;
+    }
+    h1 {
+      &.collection-title {
+      font-size:100px;
+      }
+    }
+    .womens-banner {
+      background:url(../img/desktop-womens-banner2.jpg) no-repeat center center;
+      background-size: cover;
+    }  
+    .mens-banner {
+      background:url(../img/desktop-mens-banner.jpg) no-repeat center center;
+      background-size: cover;
+    }  
+    .browse-tags {
+      label {
+        font-size:18px;
+      }
+      select {
+        font-size:30px;
+      }
+    }    
+  }
+
+}

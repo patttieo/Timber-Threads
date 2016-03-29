@@ -12,6 +12,7 @@
 .home-wrapper {
   overflow: hidden;
   .home-page-products {
+    
     h2 { 
       text-transform:uppercase; 
       text-align:center; 
@@ -164,7 +165,7 @@
     }
   }
   .cta-title {
-    margin-top: 10%;
+    margin-top: 20%;
   }
   .cta-image {
     height: 100%;
@@ -231,15 +232,14 @@
         h2 {
           text-transform: uppercase;
           color: #333333;
-          padding: 1rem 0 0;
+          padding:0;
           font-size: 3.5rem;
         }
         .cta-logo {
           &:before,
           &:after {
             position: absolute;
-            top:50%;
-
+            top:55%;
             height: 1px;
             content:"";
             width:3rem;
@@ -290,24 +290,45 @@
       }
     }
     .cta-right {
-      background: url(../img/cta-big-fallwinter.jpg) no-repeat center center;
+      background: url(../img/cta-fallwinter-img.jpg) no-repeat center center;
       display: block;
       background-size: cover;
       .cta-title {
-        position: relative;
-        top: 60%;
+        position: absolute;
+        width:100%;
+        top: 50%;
         text-align: center;
         padding:10px 0;
-        background: rgba(255,255,255,0.85);
         h2 {
+          color:#fff;
           font-weight: 200;
           text-transform: uppercase;
-          font-size:24px;
+          font-size:2rem;
           span { 
-            font-size:40px;
+            font-size:4rem;
             display: block;
           }
-        }    
+        } 
+        .view-more {
+          position:relative;
+          color:#fff;
+          position:relative;
+          &:before,
+          &:after {
+            position: absolute;
+            top:50%;
+            height: 1px;
+            content:"";
+            width:2rem;
+            background:#fff;
+          }
+          &:before {
+            right:120%;
+          }
+          &:after {
+            left:120%;
+          }
+        }   
       }
     }
   }
@@ -343,6 +364,7 @@
         .cta-image {
           background: url(../img/cta-womens.jpg) no-repeat center center;
           background-size: cover;
+        }      
       }
       .bottom-cta {
         .cta-title {
@@ -372,15 +394,13 @@
         h2 {
           text-transform: uppercase;
           color: #333333;
-          padding: 1rem 0 0;
           font-size: 3.5rem;
         }
         .cta-logo {
           &:before,
           &:after {
             position: absolute;
-            top:50%;
-
+            top:55%;
             height: 1px;
             content:"";
             width:3rem;
@@ -432,24 +452,46 @@
     }
     .cta-left {
       height: 100%;
-      background: url(../img/cta-big-fallwinter.jpg) no-repeat center center;
+      background: url(../img/cta-fw-img.jpg) no-repeat center center;
       display: block;
       background-size: cover;
       .cta-title {
-        position: relative;
-        top: 50%;
+        position: absolute;
+        width:100%;
+        top: 30%;
         text-align: center;
         padding:10px 0;
-        background: rgba(255,255,255,0.85);
         h2 {
+
+          color:#fff;
           font-weight: 200;
           text-transform: uppercase;
-          font-size:24px;
+          font-size:3rem;
           span { 
-            font-size:4rem;
+            font-size:7rem;
             display: block;
           }
-        }    
+        } 
+        .view-more {
+          position:relative;
+          color:#fff;
+          position:relative;
+          &:before,
+          &:after {
+            position: absolute;
+            top:50%;
+            height: 1px;
+            content:"";
+            width:2rem;
+            background:#fff;
+          }
+          &:before {
+            right:120%;
+          }
+          &:after {
+            left:120%;
+          }
+        }   
       }
     }
   }
@@ -499,5 +541,5 @@
       }
     }
   }
-  }
+
 }
