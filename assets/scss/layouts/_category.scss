@@ -1,27 +1,17 @@
 .category-wrapper {
   padding-bottom:30px;
-  .collection-banner-wrapper {
-    margin-right:0;
-    margin-left:0;
-  }
-  .collection-banner {
-    height:25rem;
-    width:100%;
-    overflow: hidden;
-    img {
-      width:100%;
-      height:auto;
-    }
-  }
   .womens-banner {
     background:url(../img/mobile-womens-banner.jpg) no-repeat center top;    
   }  
   .mens-banner {
     background:url(../img/mobile-mens-banner.jpg) no-repeat center top;    
   }
+  .category-option-wrap {
+    margin:2rem 0 3rem;
+  }
   .breadcrumbs {
     background:none;
-    padding:0; 
+    padding:0.70rem 0 0; 
     margin:0;
     text-align:right;
     position:relative;
@@ -50,10 +40,12 @@
       }      
       &.is-active {
       font-size:6rem;
-      color:$dark-gray;
       text-transform: uppercase;
       font-family: $league;
       display: block;
+        span {
+          color:$dark-gray;
+        }
         &:after,
         &:before {
           display: none;
@@ -77,6 +69,7 @@
       font-size:1rem;
       display: block;
       padding:0;
+      color:$dark-gray;
     }
     select {
       font-size:3rem;
@@ -84,14 +77,12 @@
       color:$red;
       position: relative;
       height:auto;
-
-      
       font-family: $league;
       &.form-select--small,
       &.form-select--date {
         max-height: none;
         padding:0;
-        line-height: 2rem;
+        line-height: 1;
       }
       &.form-control {
         box-shadow:none;
@@ -102,7 +93,7 @@
       }
       option {
         padding:0;
-        font-size:12px;
+        font-size:1rem;
       }
     }
   }

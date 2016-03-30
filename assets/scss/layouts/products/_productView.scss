@@ -7,6 +7,7 @@
 // -----------------------------------------------------------------------------
 
 .productView {
+
     @include grid-row($behavior: "nest");
     margin-left: -(spacing("base"));
     margin-right: -(spacing("base"));
@@ -34,10 +35,9 @@
 }
 
 .productView-details {
-    @include grid-column(12);
     padding-left: spacing("base");
     padding-right: spacing("base");
-
+    width:auto;
     @include breakpoint("medium") {
         clear: right;
         float: right;

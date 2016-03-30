@@ -26,9 +26,13 @@ product:
         {{#if settings.show_product_reviews}}
             {{> components/products/reviews reviews=product.reviews product=product urls=urls}}
         {{/if}}
+        <div class="related-products">
+            {{> components/products/tabs}}
 
-        {{> components/products/tabs}}
+        </div>
+        
 
+        
     </div>
 
 {{/partial}}

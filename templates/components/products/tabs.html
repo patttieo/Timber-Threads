@@ -1,7 +1,8 @@
-<ul class="tabs" data-tab role="tablist">
+
+<ul class="tabs" data-tab role="tablist" style="display:none;">
     {{#if product.related_products}}
         <li class="tab is-active" role="presentational">
-            <a class="tab-title" href="#tab-related" role="tab" tabindex="0" aria-selected="true" controls="tab-related">{{lang 'products.related_products'}}</a>
+            <a class="tab-title" href="#tab-related" role="tab" tabindex="0" aria-selected="true" controls="tab-related"></a>
         </li>
     {{/if}}
     {{#if product.similar_by_views}}
@@ -10,17 +11,18 @@
         </li>
     {{/if}}
 </ul>
-
-<div class="tabs-contents">
-{{#if product.related_products}}
-    <div role="tabpanel" aria-hidden="false" class="tab-content has-jsContent is-active" id="tab-related">
-        {{> components/products/carousel products=product.related_products columns=6}}
+<div class="container">
+    <h2>{{lang 'products.related_products'}}</h2>    
+    <div>
+        {{#if product.related_products}}
+            <div role="tabpanel" aria-hidden="false" class="tab-content has-jsContent is-active" id="tab-related">
+                {{> components/products/carousel products=product.related_products columns=6}}
+            </div>
+        {{/if}}
     </div>
-{{/if}}
-
-{{#if product.similar_by_views}}
-    <div role="tabpanel" aria-hidden="true" class="tab-content has-jsContent{{#unless product.related_products}} is-active{{/unless}}" id="tab-similar">
-        {{> components/products/carousel products=product.similar_by_views columns=6}}
-    </div>
-{{/if}}
+    {{#if product.similar_by_views}}
+        <div role="tabpanel" aria-hidden="true" class="tab-content has-jsContent{{#unless product.related_products}} is-active{{/unless}}" id="tab-similar">
+            {{> components/products/carousel products=product.similar_by_views columns=6}}
+        </div>
+    {{/if}}
 </div>

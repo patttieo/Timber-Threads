@@ -1,0 +1,103 @@
+// TT Styles 
+.productView {
+   margin-top:$header-height;
+   .productView-rating {
+    display: none;
+   }
+    .productView-details {
+        text-align: right;
+        width: 80%;
+        padding:0;
+     .productView-title {
+        font-size:4rem;
+        font-family: $league;
+        text-transform: uppercase;
+     }   
+     .productView-brand {
+        display: none;
+     }
+    }
+    .productView-option {
+        .form-field,
+        .form-action {
+            float: right;
+        }
+
+    }
+    .productView-product {
+        padding-bottom:0;
+    }
+    .productView-price {
+        margin-top:1rem;
+        font-size:2rem;
+    }
+    .productView-images {
+        width:auto; 
+    }
+    .size-qty-wrap {
+        padding:1.5rem 0;
+        width:100%;
+        border-bottom:1px solid $light-gray;
+        .form-field {
+            margin-bottom:0;
+        }
+    }
+    .product-sizes {
+
+        .form-option {
+           border:none;
+           box-shadow:none; 
+           border-radius:0.30rem;
+           background: #d6dfe9;
+           padding:0.3rem;
+           font-size:0.60rem;
+            span {
+                color:#335e91;
+            }
+        }
+        .form-radio:checked + .form-option  {
+            background:#335e91;
+            span {
+                color:$white;
+            }
+        }        
+    }
+    .productView-description {
+        width: 75%;
+        padding-bottom:1.5rem;
+        text-align: right;
+        border-bottom:1px solid $light-gray;
+    }
+    .productView-options {
+        .form-input {
+           background: #d6dfe9;
+           color:#335e91; 
+            font-size: 1rem;
+            padding: 0.1rem;
+        }
+    }
+    .product-price-addtocart-wrap {
+        float: right;
+    }
+    .productView-price {
+        font-family: $robot;
+        color:$red;
+        span {
+            position: relative;
+            top:0.30rem;
+            margin-right:1rem;
+        }
+    }
+}
+
+
+.related-products {
+    background: linear-gradient(to bottom,#f0f0f0 0,#fff 100%);
+    text-align:center;
+    h2 {
+        font-size:4rem;
+        margin-bottom: 1rem;
+        font-family: $league;
+        text-transform: uppercase;
+    }
+}

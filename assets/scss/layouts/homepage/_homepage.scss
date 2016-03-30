@@ -12,7 +12,6 @@
 .home-wrapper {
   overflow: hidden;
   .home-page-products {
-    
     h2 { 
       text-transform:uppercase; 
       text-align:center; 
@@ -24,7 +23,7 @@
 
 .carousel {
   width:100%; 
-  height:70vh; 
+  height:80vh; 
   position: relative;
   .carousel-inner {
     height: 100%;
@@ -32,14 +31,17 @@
   .carousel-content {
     height: 100%;
   }
-  .carousel-arrow { 
-    position: absolute; 
-    z-index:2; 
-    top:88%;
-    a { 
-      font-size:10rem; 
-      text-decoration:none; 
-      color:#fff;
+  .carousel-control { 
+    .fa { 
+      position:absolute;
+      top:50%;
+      font-size:7rem;
+    }
+    .fa-angle-left {
+      left:0;
+    }
+    .fa-angle-right {
+      right:0;
     }
   }
   .carousel-arrow-right { right:0; }
@@ -54,52 +56,27 @@
       top:25%;
       left:5%;
       text-align: left;
-      a {
-        font-size:3rem;
-        text-decoration:none;
+      h2 { 
+        white-space:nowrap; 
+        font-size:3.5rem; 
+        color:#fff;
+        text-transform:uppercase; 
       }
+      .collection { 
+        font-size:0.80rem;
+        padding:1rem; 
+        a { 
+          text-decoration:none; 
+         color:#fff; 
+        }
+      }      
     }
-    h2 { 
-      white-space:nowrap; 
-      font-size:5.5rem; 
-      color:#fff;
-      text-transform:uppercase; 
-    }
-    .collection { 
-      font-size:1rem;
-      padding:1rem 2rem; 
-      a { 
-      text-decoration:none; 
-       color:#fff; 
-      }
-    }
+
   }
   .carousel-control {
     background-image:none;
   }
-  .carousel-nav-wrapper {
-    width:100%; 
-    height: 100%;
-  }
-  .carousel-container {
-    display: none; 
-    width:100px; 
-    margin:0 auto; 
-    top:96%;
-    z-index: 4;
-    position:relative;
-  }
-  .carousel-nav-item {
-    border-radius: 50%;
-    width:15px;
-    height:15px;
-    background:#000;
-    display:inline-block;
-  }
 
-  .carousel-active { 
-    left:0; 
-  }
 
   .fallwinter-2015   {
       background: url(../img/banners/fallwinter-2015-slide.jpg) no-repeat center center;
