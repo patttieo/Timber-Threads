@@ -2,12 +2,11 @@
 
 {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 
-<main class="page fullwidth">
-
-    <h1 class="page-heading" style="display:none;">{{ page.title }}</h1>
+<main class="page">
+    <h1 class="page-heading">{{ page.title }}</h1>
 
     {{#if page.sub_pages}}
-    <nav class="navBar navBar--sub" style="display:none;">
+    <nav class="navBar navBar--sub">
         <ul class="navBar-section account-navigation">
         {{#each page.sub_pages}}
             <li class="navBar-item"><a class="navBar-action" href="{{url}}">{{title}}</a></li>
@@ -16,11 +15,11 @@
     </nav>
     {{/if}}
 
-    <div class="page-content" >
+    <div class="page-content fullwith">
         {{#replace '%%Syndicate%%' page.content}}
             {{> components/page/rss_feed}}
         {{else}}
-            {{{page.content}}}
+            <p>{{{page.content}}}</p>
         {{/replace}}
     </div>
 

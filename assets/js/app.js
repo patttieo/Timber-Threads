@@ -21,7 +21,7 @@ import search from './theme/search';
 import sitemap from './theme/sitemap';
 import subscribe from './theme/subscribe';
 import wishlist from './theme/wishlist';
-
+import main from './theme/main';
 
 
 const PageClasses = {

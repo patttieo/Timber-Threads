@@ -1,0 +1,133 @@
+.lookbook-wrapper {
+
+
+  .lb-images {
+    a { text-decoration:none; width:100%; height:100%; display:block; }
+  
+  }
+
+  h2 { 
+      font-size:60px;
+      text-transform: uppercase;
+      color:#fff; 
+      line-height: 1;
+      span { font-size:40px; display:block; }
+      .viewmore {  font-size:20px; }
+    }
+
+  button {
+    background:none;
+    border:3px solid #fff;
+    color:#fff;
+  }
+
+  .lb-bg {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width:100%;    
+    opacity:0;
+    transition: opacity 1s;
+    background-size:cover;
+    height: 100vh;
+  }
+    .lb-bg.active {
+      opacity:1;
+
+    }  
+  .lookbooks {
+    position: relative;
+    z-index: 3;
+    width:100%;
+    height:25vh;
+    border-bottom: 1px #fff solid; 
+    .titles {
+      position: absolute;
+      top:50%;
+      font-size:14px;
+      padding:2%;
+      transition: all 0.2s ease-in-out;
+      opacity:0.5; 
+      h2 {
+        font-size:30px;
+      }
+    }   
+  }
+}
+
+.summer-2015-bg {
+  background: url(../img/lookbooks/lookbook-summer-2015.jpg) no-repeat center center;
+}
+
+.spring-2015-bg {
+   background: url(../img/lookbooks/lookbook-spring-2015.jpg) no-repeat center center;
+}
+.fallwinter-2015-bg {
+    background: url(../img/lookbooks/lookbook-fallwinter-2015.jpg) no-repeat center center;
+}
+
+
+
+
+
+
+.all-look-books {
+  .lb-image-one {
+    background: url(mid-summer-image.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .lb-image-two {
+    background: url(fall-image.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  } 
+}
+// @import "/lookbooks/fallwinter-2015-lookbook";
+// @import "/lookbooks/spring-2015-lookbook";
+// @import "/lookbooks/summer-2015-lookbook";
+
+
+@media (min-width:992px) {
+  .lookbook-wrapper {
+    .lb-bg {
+      position: absolute;
+      top: 0;
+      left: 0; 
+      width:100%;    
+      opacity:0;
+      transition: opacity 1s;
+      background-size:cover;
+      height: 100vh;
+    }
+    .lb-bg.active {
+      opacity:1;
+
+    }
+    .lookbooks {
+      position: relative;
+      z-index: 3;
+      width:25%;
+      height:100vh;
+      float:left;
+      border-right: 1px #fff solid; 
+      .titles {
+        position: absolute;
+        top:80%;
+        font-size:14px;
+        padding:2%;
+        transition: all 0.2s ease-in-out;
+        opacity:0.5; 
+        h2 {
+          font-size:30px;
+        }
+      }    
+      &:hover {
+        .titles {
+          opacity:1;
+        }
+        
+      }
+    }    
+  }
+}
