@@ -37,7 +37,8 @@
     padding-top: 10px;
     border:none;
     ul { 
-      line-height: 90px; 
+      line-height: 120px; 
+      margin:0;
     }
     li {
       display:block; 
@@ -108,7 +109,7 @@
     .social-links,
     .store-links {
       li {
-        margin:0 0.5rem;
+        
         float:left; 
         color:#fff;
         font-family: $league;
@@ -116,13 +117,28 @@
         a {
           font-family: $league;
           color:#fff;
+          &:hover {
+            color:$gold;
+          }
+        }
+        .fa {
+          &:hover {
+            color:$gold;
+          }
         }
       }
     }
     .social-links {
       float: left;
+      li {
+        margin:0 0.3rem 0 0;
+      }
     }
     .store-links {
+      padding-right:1rem;
+      li {
+        margin:0 0 0 0.3rem;
+      }
       float: right;
     }
   }    

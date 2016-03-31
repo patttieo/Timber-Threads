@@ -10,7 +10,7 @@
                 {{>components/common/alert-success success}}
             {{/if}}
         {{/each}}
-        <div class="col-sm-12 col-md-6 product-details">
+        <div class="col-sm-12 col-md-6 product-details no-pad">
             <section class="productView-details">
                 <div class="productView-product">
                     <h1 class="productView-title" {{#if schema}}itemprop="name"{{/if}}>{{product.title}}</h1>
@@ -140,7 +140,7 @@
                     </dl>
                 </div>
             </section>
-            <article class="productView-description"{{#if schema}} itemprop="description"{{/if}}>
+            <article class="productView-description productView-options"{{#if schema}} itemprop="description"{{/if}}>
                 {{{product.description}}}
                 {{{snippet 'product_description'}}}
             </article>                  
@@ -201,7 +201,7 @@
                         
                         {{#if product.can_purchase}}
 
-                            <div class="form-field form-field--increments">
+                            <div class="form-field form-field--increments inline qty-wrap">
                                 <label class="form-label inline form-label--alternate"
                                        for="qty[]">QTY:</label>
 

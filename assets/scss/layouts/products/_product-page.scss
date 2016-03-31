@@ -17,7 +17,11 @@
         display: none;
      }
     }
-    .productView-option {
+    .productView-options {
+
+    }
+    .productView-options {
+        text-align:right;
         .form-field,
         .form-action {
             float: right;
@@ -40,6 +44,17 @@
         border-bottom:1px solid $light-gray;
         .form-field {
             margin-bottom:0;
+            margin-right: 0;
+        }
+        .qty-wrap {
+            position:relative;
+            margin-left:1rem;
+            font-family:$default;
+            label {
+                position: relative;
+                top: 0.3rem;
+                margin-right: 0.7rem;
+            }
         }
     }
     .product-sizes {
@@ -63,28 +78,33 @@
         }        
     }
     .productView-description {
-        width: 75%;
+        width: 80%;
         padding-bottom:1.5rem;
         text-align: right;
         border-bottom:1px solid $light-gray;
     }
     .productView-options {
         .form-input {
-           background: #d6dfe9;
-           color:#335e91; 
+            background: #d6dfe9;
+            color:#335e91; 
             font-size: 1rem;
-            padding: 0.1rem;
+            padding: 0.3rem;
         }
     }
     .product-price-addtocart-wrap {
         float: right;
+        padding-top:1rem;
+        input.button {
+            margin-right:0;
+            float: right;
+        }
     }
     .productView-price {
         font-family: $robot;
         color:$red;
         span {
             position: relative;
-            top:0.30rem;
+            // top:0.30rem;
             margin-right:1rem;
         }
     }
@@ -96,7 +116,7 @@
     text-align:center;
     h2 {
         font-size:4rem;
-        margin-bottom: 1rem;
+        margin: 2rem 0 1rem;
         font-family: $league;
         text-transform: uppercase;
     }
