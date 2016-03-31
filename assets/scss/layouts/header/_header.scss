@@ -37,8 +37,12 @@
     padding-top: 10px;
     border:none;
     ul { 
+<<<<<<< HEAD
       line-height: 120px; 
       margin:0;
+=======
+      line-height: 7; 
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
     }
     li {
       display:block; 
@@ -109,7 +113,11 @@
     .social-links,
     .store-links {
       li {
+<<<<<<< HEAD
         
+=======
+       
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
         float:left; 
         color:#fff;
         font-family: $league;
@@ -120,26 +128,41 @@
           &:hover {
             color:$gold;
           }
+<<<<<<< HEAD
         }
         .fa {
           &:hover {
             color:$gold;
           }
+=======
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
         }
       }
     }
     .social-links {
+      padding-left:1rem;
       float: left;
       li {
+<<<<<<< HEAD
         margin:0 0.3rem 0 0;
+=======
+         margin:0 0.4rem 0 0;
+        .fa {
+          font-size:0.80rem;
+        }
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
       }
     }
     .store-links {
       padding-right:1rem;
+<<<<<<< HEAD
       li {
         margin:0 0 0 0.3rem;
       }
+=======
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
       float: right;
+       margin:0 0 0 0.5rem ;
     }
   }    
 }

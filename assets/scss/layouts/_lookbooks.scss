@@ -1,8 +1,16 @@
 .lookbook-wrapper {
+<<<<<<< HEAD
   margin-top:-112px;
   width: 100%;
   .lb-images {
     a { text-decoration:none; width:100%; height:100%; display:block; color:#000; }
+=======
+
+
+  .lb-images {
+    a { text-decoration:none; width:100%; height:100%; display:block; }
+  
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
   }
 
   h2 { 
@@ -30,9 +38,16 @@
     background-size:cover;
     height: 100vh;
   }
+<<<<<<< HEAD
   .lb-bg.active {
     opacity:1;
   }  
+=======
+    .lb-bg.active {
+      opacity:1;
+
+    }  
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
   .lookbooks {
     position: relative;
     z-index: 3;
@@ -46,7 +61,10 @@
       padding:2%;
       transition: all 0.2s ease-in-out;
       opacity:0.5; 
+<<<<<<< HEAD
       color:#000;
+=======
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
       h2 {
         font-size:30px;
       }
@@ -55,6 +73,7 @@
 }
 
 .summer-2015-bg {
+<<<<<<< HEAD
   background: url(../../img/lookbook-summer-2015.jpg) no-repeat center center;
   width: 100%;
 }
@@ -64,11 +83,26 @@
 }
 .fw-2015-bg {
   background: url(../../img/lookbook-fall-2014.jpg) no-repeat center center;
+=======
+  background: url(../img/lookbooks/lookbook-summer-2015.jpg) no-repeat center center;
+}
+
+.spring-2015-bg {
+   background: url(../img/lookbooks/lookbook-spring-2015.jpg) no-repeat center center;
+}
+.fallwinter-2015-bg {
+    background: url(../img/lookbooks/lookbook-fallwinter-2015.jpg) no-repeat center center;
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
 }
 
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
 .all-look-books {
   .lb-image-one {
     background: url(mid-summer-image.jpg) no-repeat center center;
@@ -81,11 +115,17 @@
     background-size: cover;
   } 
 }
+<<<<<<< HEAD
 
 
 
 @import "/lookbooks/fallwinter-2015";
 @import "/lookbooks/summer-2015";
+=======
+// @import "/lookbooks/fallwinter-2015-lookbook";
+// @import "/lookbooks/spring-2015-lookbook";
+// @import "/lookbooks/summer-2015-lookbook";
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
 
 
 @media (min-width:992px) {

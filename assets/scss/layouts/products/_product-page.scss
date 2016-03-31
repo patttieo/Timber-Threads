@@ -78,10 +78,16 @@
         }        
     }
     .productView-description {
+<<<<<<< HEAD
         width: 80%;
+=======
+        width: 75%;
+        float: right;
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
         padding-bottom:1.5rem;
         text-align: right;
         border-bottom:1px solid $light-gray;
+        padding-right:0;
     }
     .productView-options {
         .form-input {
@@ -93,11 +99,17 @@
     }
     .product-price-addtocart-wrap {
         float: right;
+<<<<<<< HEAD
         padding-top:1rem;
         input.button {
             margin-right:0;
             float: right;
         }
+=======
+        .button{
+            margin-right:0;
+        }        
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
     }
     .productView-price {
         font-family: $robot;
@@ -106,6 +118,18 @@
             position: relative;
             // top:0.30rem;
             margin-right:1rem;
+        }
+
+    }
+    .qty-wrap {
+        float: right;
+        position: relative;
+        top:0.20rem;
+        label {
+            font-family:$robot;
+            position: relative;
+            top:0.20rem;
+            margin-right:0.70rem;
         }
     }
 }

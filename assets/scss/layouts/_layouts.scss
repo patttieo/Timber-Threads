@@ -39,11 +39,25 @@
 // Home Page
 @import "homepage/homepage";
 
+// Default Page Styles
+@import "page";
 
 // Category Page Styles
 @import "category";
 
+<<<<<<< HEAD
 @import "lookbooks";
+=======
+// Category Page Styles
+@import "lookbooks";
+
+// Category Page Styles
+@import "contact-us";
+
+// Default Page Styles
+@import "about-us";
+
+>>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
 
 // Page content layouts
 // -----------------------------------------------------------------------------
