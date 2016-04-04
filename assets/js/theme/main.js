@@ -9,7 +9,20 @@ $( document ).ready(function() {
   });
 
 
+  $("#js-open-m-nav").on("click", function() {
+      console.log("click");
+      $("#js-open-m-nav").removeClass("active");
+      $(".nav-links").addClass("open-m-nav");
+      $("#js-close-m-nav").addClass("active");
+      $(".m-header").addClass("active");
+  });
 
+  $("#js-close-m-nav").on("click", function() {
+      $(".nav-links").removeClass("open-m-nav");
+      $("#js-open-m-nav").addClass("active");
+      $("#js-close-m-nav").removeClass("active");
+      $(".m-header").removeClass("active");
+  });
 
 
 });

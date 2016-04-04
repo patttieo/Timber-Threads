@@ -1,16 +1,26 @@
 .category-wrapper {
-  padding-bottom:30px;
+  padding-bottom:1rem;
   .womens-banner {
-    background:url(../img/mobile-womens-banner.jpg) no-repeat center top;    
+    .banner-img {
+     background:url(../img/mobile-womens-banner.jpg) no-repeat center top;     
+    }
+    
   }  
   .mens-banner {
-    background:url(../img/mobile-mens-banner.jpg) no-repeat center top;    
+    .banner-img {
+      background:url(../img/mobile-mens-banner.jpg) no-repeat center top;  
+    }
+  }
+  .banner-img {
+    height:15rem;
+    width:100%;
   }
   .category-option-wrap {
     margin:0 0 3rem;
   }
   .breadcrumbs {
     background:none;
+    display: block;
     padding:0.70rem 0 0; 
     margin:0;
     text-align:right;
@@ -72,7 +82,7 @@
       color:$dark-gray;
     }
     select {
-      font-size:3rem;
+      font-size:2rem;
       text-transform: uppercase;
       color:$red;
       position: relative;
@@ -132,50 +142,51 @@
 
     }
   }
-  .collection-container {
-    margin:60px auto 0;
-  }
-}
-.collections {
-  .price,
-  .span12 h1 {
-    display: none;
-  }
-  .products {
-    margin-top:100px;
-  }
-  .title {
-    font-size:30px;
-    margin-top:20px;
-  }
-}
-@media (min-width:992px) {
 
-  .collection-wrapper {
-    .collection-banner {
-      height: 60rem;
-    }
-    h1 {
-      &.collection-title {
-      font-size:100px;
-      }
-    }
-    .womens-banner {
-      background:url(../img/desktop-womens-banner2.jpg) no-repeat center center;
-      background-size: cover;
+}
+
+@media (min-width:992px) {
+.category-wrapper {
+
+  .womens-banner {
+    .banner-img {
+      background:url(../img/desktop-womens-banner.jpg) no-repeat center top;
     }  
-    .mens-banner {
-      background:url(../img/desktop-mens-banner.jpg) no-repeat center center;
-      background-size: cover;
-    }  
-    .browse-tags {
-      label {
-        font-size:18px;
-      }
-      select {
-        font-size:30px;
-      }
-    }    
+  }  
+  .mens-banner {
+    .banner-img {
+      background:url(../img/desktop-mens-banner.jpg) no-repeat center top;    
+    }
+
   }
+  .banner-img {
+    height:20rem;
+    width:100%;
+  }
+  .breadcrumbs {
+    li {   
+      &.is-active {
+        font-size:4.3rem;
+      } 
+    }
+
+  }
+  .form-fieldset {
+    label {
+      font-size:1rem;
+      display: block;
+      padding:0;
+      color:$dark-gray;
+    }
+    select {
+      font-size:3rem;
+    }
+  }
+
+
+
+
+}
+
 
 }

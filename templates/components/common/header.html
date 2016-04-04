@@ -8,6 +8,40 @@
 
 
 
+      <header class="m-header hidden-md hidden-lg" id="header" role="banner">
+        <div class="nav-controllers">
+          <div class="o-mnav-trigger hidden-md hidden-lg active" id="js-open-m-nav"><i class="fa fa-bars"></i></div>
+          <div class="c-mnav-trigger" id="js-close-m-nav"><i class="fa fa-times"></i></div>
+        </div>
+        <div class="shopping-cart"><a href="/cart"><i class="fa fa-shopping-cart"></i></a></div>
+          <div class="logo-wrapper header-item">
+            <div class="logo-wrap">
+              <a href="/">
+               <img src="{{cdn '/assets/img/logo.svg'}} " alt="">
+                <strong>Quality Clothing</strong>
+              </a>
+            </div>
+          </div>
+          <div class="nav-links">
+            <section id="nav main-nav" id="top-menu">
+              <nav role="navigation" class="main-nav">
+              <ul class="main-nav right-nav header-item">
+                  {{#each categories}}
+                      <li>
+                          <a href="{{url}}">{{name}}</a>
+                      </li>
+                  {{/each}}  
+                  {{#each pages}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                  {{/each}}
+              </ul>
+              </nav>
+              </section>
+          </div>
+      </header> <!-- end header -->
+
 
       <header class="d-header header hidden-xs hidden-sm" role="banner">
         <div id="inner-header" class="cf inner-header">
@@ -22,7 +56,7 @@
             <div class="logo-wrapper header-item">
               <div class="logo-wrap">
                 <a href="/">
-                <img src="/stencil/theme/1/img/logo.svg" alt="">
+                 <img src="{{cdn '/assets/img/logo.svg'}} " alt="">
                   <strong>Quality Clothing</strong>
                 </a>
               </div>

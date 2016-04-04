@@ -1,20 +1,10 @@
 {{#partial "page"}}
 
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
 
 <main class="page fullwidth">
 
-    <h1 class="page-heading" style="display:none;">{{ page.title }}</h1>
 
-    {{#if page.sub_pages}}
-    <nav class="navBar navBar--sub" style="display:none;">
-        <ul class="navBar-section account-navigation">
-        {{#each page.sub_pages}}
-            <li class="navBar-item"><a class="navBar-action" href="{{url}}">{{title}}</a></li>
-        {{/each}}
-        </ul>
-    </nav>
-    {{/if}}
 
     <div class="page-content" >
         {{#replace '%%Syndicate%%' page.content}}

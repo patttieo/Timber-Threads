@@ -89,7 +89,7 @@
       background-attachment: fixed;
   }    
   .shop-mens {
-      background: url(../img/banners/slide-shop-mens.jpg) no-repeat center center;
+      background: url(../img/banners/slide-shop-mens-mobile.jpg) no-repeat center center;
       background-size: cover;
      background-attachment: fixed;
   }
@@ -104,7 +104,6 @@
   .cta-wrapper-two {
     height:30rem;
     width: 100%;
-    overflow: hidden;
   }
   .cta-inner,
   .row,
@@ -120,9 +119,11 @@
     display: block;
     height: 100%;
     width:100%;
+    position:absolute;
+    left:0;
+    top:0;
   }  
   .cta-right {
-    overflow: hidden;
     height:100%;
   }
   .cta-logo {
@@ -142,11 +143,31 @@
     }
   }
   .cta-title {
-    margin-top: 20%;
+    margin-top: 13%;
   }
   .cta-image {
     height: 100%;
   }
+  .view-more {
+    position:relative;
+    color:#fff;
+    position:relative;
+    &:before,
+    &:after {
+      position: absolute;
+      top:50%;
+      height: 1px;
+      content:"";
+      width:2rem;
+      background:#fff;
+    }
+    &:before {
+      right:120%;
+    }
+    &:after {
+      left:120%;
+    }
+  }  
   .cta-wrapper-one {
     .cta-left {
       background: #fff;
@@ -255,15 +276,12 @@
             left:100%;
           }
         }
-
         .top-hr {
           top: 45px;
         }
         .bottom-hr {
           bottom: 1.52rem;
         }
-
-        
       }
     }
     .cta-right {
@@ -271,11 +289,9 @@
       display: block;
       background-size: cover;
       .cta-title {
-        position: absolute;
-        width:100%;
-        top: 50%;
+        margin-top: 30%;
         text-align: center;
-        padding:10px 0;
+        padding:0.4rem;
         h2 {
           color:#fff;
           font-weight: 200;
@@ -286,26 +302,7 @@
             display: block;
           }
         } 
-        .view-more {
-          position:relative;
-          color:#fff;
-          position:relative;
-          &:before,
-          &:after {
-            position: absolute;
-            top:50%;
-            height: 1px;
-            content:"";
-            width:2rem;
-            background:#fff;
-          }
-          &:before {
-            right:120%;
-          }
-          &:after {
-            left:120%;
-          }
-        }   
+ 
       }
     }
   }
@@ -339,7 +336,7 @@
           }    
         }
         .cta-image {
-          background: url(../img/cta-womens.jpg) no-repeat center center;
+          background: url(../img/cta-blog-img.jpg) no-repeat center center;
           background-size: cover;
         }      
       }
@@ -358,7 +355,7 @@
           }
         }
          .cta-image {
-          background: url(../img/cta-mens.jpg) no-repeat center center;
+          background: url(../img/cta-aboutus-img.jpg) no-repeat center center;
           background-size: cover;
         }     
       }
@@ -435,7 +432,7 @@
       .cta-title {
         position: absolute;
         width:100%;
-        top: 30%;
+        top:0;
         text-align: center;
         padding:10px 0;
         h2 {
@@ -475,7 +472,7 @@
 }
 
 .home-page-products {
-  padding:4rem 0;
+  padding:4rem 2rem;
   h2 {
     font-size:6rem;
     text-transform: uppercase; 
@@ -490,20 +487,47 @@
     }
   }
   .cta-wrapper {
-      background: url(../img/bg-cta.jpg) no-repeat center center;
-      padding:100px 0;
+    background: url(../img/bg-cta.jpg) no-repeat center center;
+    padding:100px 0;
+    .cta-wrapper-one {
+      .cta-right {
+        .cta-title {
+          margin-top:50%;
+        }  
+      }
+      .cta-title {
+        margin-top:20%;
+      }
+    }
+
+    .cta-wrapper-two {
+      .cta-left {
+        .cta-title {
+          top:30%;
+        }
+      }
+    }
+
+  }
+  .carousel {
+    .shop-womens   {
+        background: url(../img/banners/slide-shop-womens.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }    
+    .shop-mens {
+        background: url(../img/banners/slide-shop-mens.jpg) no-repeat center center;
+        background-size: cover;
+       background-attachment: fixed;
+    }
   }
   .carousel-wrapper {
-    .cta-wrapper-one,
-    .cta-wrapper-two {
-      height: 30rem;
-    }
+
     .carousel-arrow { 
       top:50%;
     }
-    .shop-womens {
-       background-image: url(../img/slide-shop-womens.jpg);
-    }
+
+
   }
 
   .product-container {

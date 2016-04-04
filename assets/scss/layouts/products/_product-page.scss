@@ -1,15 +1,16 @@
 // TT Styles 
 .productView {
    margin-top:$header-height;
+
    .productView-rating {
     display: none;
    }
     .productView-details {
-        text-align: right;
-        width: 80%;
+        text-align: center;
+        width:100%;
         padding:0;
      .productView-title {
-        font-size:4rem;
+        font-size:3.5rem;
         font-family: $league;
         text-transform: uppercase;
      }   
@@ -24,7 +25,7 @@
         text-align:right;
         .form-field,
         .form-action {
-            float: right;
+            float:none;
         }
 
     }
@@ -42,6 +43,7 @@
         padding:1.5rem 0;
         width:100%;
         border-bottom:1px solid $light-gray;
+        text-align: center;
         .form-field {
             margin-bottom:0;
             margin-right: 0;
@@ -78,14 +80,10 @@
         }        
     }
     .productView-description {
-<<<<<<< HEAD
-        width: 80%;
-=======
-        width: 75%;
-        float: right;
->>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
+        width:100%;
+        float: none;
         padding-bottom:1.5rem;
-        text-align: right;
+        text-align: center;
         border-bottom:1px solid $light-gray;
         padding-right:0;
     }
@@ -98,33 +96,31 @@
         }
     }
     .product-price-addtocart-wrap {
-        float: right;
-<<<<<<< HEAD
+        float: none;
         padding-top:1rem;
         input.button {
             margin-right:0;
-            float: right;
+            float: none;
+            display: block;
         }
-=======
         .button{
             margin-right:0;
         }        
->>>>>>> 7a80c8c38057cdf8b2016e5325deee8b89a711e5
     }
     .productView-price {
         font-family: $robot;
         color:$red;
         span {
             position: relative;
-            // top:0.30rem;
             margin-right:1rem;
         }
 
     }
     .qty-wrap {
-        float: right;
+        float: none;
         position: relative;
         top:0.20rem;
+        display: block;
         label {
             font-family:$robot;
             position: relative;
@@ -138,10 +134,156 @@
 .related-products {
     background: linear-gradient(to bottom,#f0f0f0 0,#fff 100%);
     text-align:center;
+    padding:1rem 0 2rem;
     h2 {
         font-size:4rem;
         margin: 2rem 0 1rem;
         font-family: $league;
         text-transform: uppercase;
+    }
+}
+
+
+
+@media (min-width:992px) {
+    // TT Styles 
+    .productView {
+       margin-top:$header-height;
+       .productView-rating {
+        display: none;
+       }
+        .productView-details {
+            text-align: right;
+            width: 80%;
+            padding:0;
+         .productView-title {
+            font-size:4rem;
+            font-family: $league;
+            text-transform: uppercase;
+         }   
+         .productView-brand {
+            display: none;
+         }
+        }
+        .productView-options {
+
+        }
+        .productView-options {
+            text-align:right;
+            .form-field,
+            .form-action {
+                float: right;
+            }
+
+        }
+        .productView-product {
+            padding-bottom:0;
+        }
+        .productView-price {
+            margin-top:0;
+            font-size:2rem;
+        }
+        .productView-images {
+            width:auto; 
+        }
+        .size-qty-wrap {
+            padding:1.5rem 0;
+            width:100%;
+            border-bottom:1px solid $light-gray;
+            .form-field {
+                margin-bottom:0;
+                margin-right: 0;
+            }
+            .qty-wrap {
+                position:relative;
+                margin-left:1rem;
+                font-family:$default;
+                label {
+                    position: relative;
+                    top: 0.3rem;
+                    margin-right: 0.7rem;
+                }
+            }
+        }
+        .product-sizes {
+
+            .form-option {
+               border:none;
+               box-shadow:none; 
+               border-radius:0.30rem;
+               background: #d6dfe9;
+               padding:0.3rem;
+               font-size:0.60rem;
+                span {
+                    color:#335e91;
+                }
+            }
+            .form-radio:checked + .form-option  {
+                background:#335e91;
+                span {
+                    color:$white;
+                }
+            }        
+        }
+        .productView-description {
+            width: 80%;
+            float: right;
+            padding-bottom:1.5rem;
+            text-align: right;
+            border-bottom:1px solid $light-gray;
+            padding-right:0;
+        }
+        .productView-options {
+            .form-input {
+                background: #d6dfe9;
+                color:#335e91; 
+                font-size: 1rem;
+                padding: 0.3rem;
+            }
+        }
+        .product-price-addtocart-wrap {
+            float: right;
+            padding-top:1rem;
+            input.button {
+                margin-right:0;
+                float: right;
+            }
+            .button{
+                margin-right:0;
+            }        
+        }
+        .productView-price {
+            font-family: $robot;
+            color:$red;
+            span {
+                position: relative;
+                // top:0.30rem;
+                margin-right:1rem;
+            }
+
+        }
+        .qty-wrap {
+            float: right;
+            position: relative;
+            top:0.20rem;
+            label {
+                font-family:$robot;
+                position: relative;
+                top:0.20rem;
+                margin-right:0.70rem;
+            }
+        }
+    }
+
+
+    .related-products {
+        background: linear-gradient(to bottom,#f0f0f0 0,#fff 100%);
+        text-align:center;
+        h2 {
+            font-size:4rem;
+            margin: 2rem 0 1rem;
+            font-family: $league;
+            text-transform: uppercase;
+        }
     }
 }
