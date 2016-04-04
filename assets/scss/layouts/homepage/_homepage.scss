@@ -89,7 +89,7 @@
       background-attachment: fixed;
   }    
   .shop-mens {
-      background: url(../img/banners/slide-shop-mens-mobile.jpg) no-repeat center center;
+      background: url(../img/banners/slide-shop-mens.jpg) no-repeat center center;
       background-size: cover;
      background-attachment: fixed;
   }
@@ -102,7 +102,7 @@
   margin:0;
   .cta-wrapper-one,
   .cta-wrapper-two {
-    height:30rem;
+    height:auto;
     width: 100%;
   }
   .cta-inner,
@@ -489,6 +489,11 @@
   .cta-wrapper {
     background: url(../img/bg-cta.jpg) no-repeat center center;
     padding:100px 0;
+    .cta-wrapper-one,
+    .cta-wrapper-two {
+      height:30rem;
+      width: 100%;
+    }
     .cta-wrapper-one {
       .cta-right {
         .cta-title {
