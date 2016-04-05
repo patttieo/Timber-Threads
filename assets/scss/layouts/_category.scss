@@ -107,6 +107,11 @@
       }
     }
   }
+  .productGrid {
+    li {
+      width:47%;
+    }
+  }
 
   .pagination-wrapper {
     text-align: center;
@@ -146,47 +151,46 @@
 }
 
 @media (min-width:992px) {
-.category-wrapper {
+  .category-wrapper {
 
-  .womens-banner {
-    .banner-img {
-      background:url(../img/desktop-womens-banner.jpg) no-repeat center top;
+    .womens-banner {
+      .banner-img {
+        background:url(../img/desktop-womens-banner.jpg) no-repeat center top;
+      }  
     }  
-  }  
-  .mens-banner {
+    .mens-banner {
+      .banner-img {
+        background:url(../img/desktop-mens-banner.jpg) no-repeat center top;    
+      }
+
+    }
     .banner-img {
-      background:url(../img/desktop-mens-banner.jpg) no-repeat center top;    
+      height:20rem;
+      width:100%;
     }
+    .breadcrumbs {
+      li {   
+        &.is-active {
+          font-size:4.3rem;
+        } 
+      }
 
-  }
-  .banner-img {
-    height:20rem;
-    width:100%;
-  }
-  .breadcrumbs {
-    li {   
-      &.is-active {
-        font-size:4.3rem;
-      } 
     }
-
-  }
-  .form-fieldset {
-    label {
-      font-size:1rem;
-      display: block;
-      padding:0;
-      color:$dark-gray;
+    .productGrid {
+      li {
+       width: 25%;
+      }
     }
-    select {
-      font-size:3rem;
+    .form-fieldset {
+      label {
+        font-size:1rem;
+        display: block;
+        padding:0;
+        color:$dark-gray;
+      }
+      select {
+        font-size:3rem;
+      }
     }
   }
-
-
-
-
-}
-
-
 }

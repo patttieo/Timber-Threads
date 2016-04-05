@@ -27,7 +27,6 @@
         .form-action {
             float:none;
         }
-
     }
     .productView-product {
         padding-bottom:0;
@@ -37,7 +36,7 @@
         font-size:2rem;
     }
     .productView-images {
-        width:auto; 
+        width:100%; 
     }
     .size-qty-wrap {
         padding:1.5rem 0;
@@ -60,7 +59,6 @@
         }
     }
     .product-sizes {
-
         .form-option {
            border:none;
            box-shadow:none; 

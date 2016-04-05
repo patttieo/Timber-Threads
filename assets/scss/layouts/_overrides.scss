@@ -2,10 +2,14 @@
   margin-bottom:0;
 }
 .body {
+  margin-top:0;
   margin-bottom:0;
 }
 
 @media (min-width:992px) {
+  .body {
+    margin-top:1.5rem;
+  }
   .marg-top {
     margin-top:10rem;
   }
