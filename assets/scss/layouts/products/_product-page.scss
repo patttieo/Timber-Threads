@@ -5,6 +5,13 @@
    .productView-rating {
     display: none;
    }
+   .m-title {
+    text-align: center;
+    padding:1rem 0;
+    font-size:3.5rem;
+    font-family: $league;
+    text-transform: uppercase;
+   }
     .productView-details {
         text-align: center;
         width:100%;
@@ -95,7 +102,11 @@
     }
     .product-price-addtocart-wrap {
         float: none;
+        text-align: center;
         padding-top:1rem;
+        .inline {
+            display: block;
+        }
         input.button {
             margin-right:0;
             float: none;
@@ -103,11 +114,18 @@
         }
         .button{
             margin-right:0;
-        }        
+        }
+        .form-action {
+            &.inline {
+                display: inline-block;
+            }
+        }  
     }
     .productView-price {
         font-family: $robot;
         color:$red;
+        display: block;
+
         span {
             position: relative;
             margin-right:1rem;
@@ -241,7 +259,11 @@
         }
         .product-price-addtocart-wrap {
             float: right;
+            text-align: none;
             padding-top:1rem;
+            .inline {
+                display: inline-block;
+            }
             input.button {
                 margin-right:0;
                 float: right;
