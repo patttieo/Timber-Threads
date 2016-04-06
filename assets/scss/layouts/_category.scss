@@ -1,19 +1,23 @@
 .category-wrapper {
   padding-bottom:1rem;
+
   .womens-banner {
     .banner-img {
-     background:url(../img/mobile-womens-banner.jpg) no-repeat center top;     
+     background:url(../img/mobile-womens-banner.jpg) no-repeat center top;  
+     background-size:cover;   
     }
     
   }  
   .mens-banner {
     .banner-img {
-      background:url(../img/mobile-mens-banner.jpg) no-repeat center top;  
+      background:url(../img/mobile-mens-banner.jpg) no-repeat center top;
+      background-size:cover;  
     }
   }
   .banner-img {
     height:15rem;
     width:100%;
+    
   }
   .category-option-wrap {
     margin:0 0 3rem;
@@ -156,11 +160,13 @@
     .womens-banner {
       .banner-img {
         background:url(../img/desktop-womens-banner.jpg) no-repeat center top;
+        background-size:cover;
       }  
     }  
     .mens-banner {
       .banner-img {
         background:url(../img/desktop-mens-banner.jpg) no-repeat center top;    
+        background-size:cover;
       }
 
     }
