@@ -1,12 +1,12 @@
 {
-  "name": "Cornerstone",
-  "version": "1.1.0",
+  "name": "Timber Threads",
+  "version": "1",
   "meta": {
     "price": 0,
     "documentation_url": "https://stencil.bigcommerce.com/docs/what-is-stencil",
-    "author_name": "Bigcommerce",
-    "author_email": "support@bigcommerce.com",
-    "author_support_url": "https://www.bigcommerce.com/support",
+    "author_name": "Pat Ortiz",
+    "author_email": "pat@timberthreads.com",
+    "author_support_url": "http://www.timberthreads.com",
     "composed_image": "composed.jpg",
     "features": [
       "fully_responsive",

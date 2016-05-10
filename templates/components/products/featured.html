@@ -1,9 +1,14 @@
 <h2 class="page-heading league">{{lang 'products.featured' }}</h2>
+<div class="row">
+  <div class="col-sm-12">
+    <ul class="productGrid" data-product-type="featured">
+        {{#each products}}
+            <li class="product col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                {{>components/products/card theme_settings=../theme_settings}}
+            </li>
+        {{/each}}
+    </ul>
+  </div>
 
-<ul class="productMasonry productGrid--maxCol{{ columns }}" data-product-type="featured">
-    {{#each products}}
-        <li class="product">
-            {{>components/products/card theme_settings=../theme_settings}}
-        </li>
-    {{/each}}
-</ul>
+</div>
+

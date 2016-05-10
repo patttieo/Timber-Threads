@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-  console.log("cool");
   $(".lookbooks").on("mouseenter", function () {
     var bgChange = $(this).data("bg"); 
     console.log("click");
@@ -10,7 +9,6 @@ $( document ).ready(function() {
 
 
   $("#js-open-m-nav").on("click", function() {
-      console.log("click");
       $("#js-open-m-nav").removeClass("active");
       $(".nav-links").addClass("open-m-nav");
       $("#js-close-m-nav").addClass("active");
@@ -24,5 +22,6 @@ $( document ).ready(function() {
       $(".m-header").removeClass("active");
   });
 
+  $('#home-carousel').carousel();
 
 });

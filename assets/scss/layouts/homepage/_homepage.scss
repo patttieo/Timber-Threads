@@ -71,7 +71,9 @@
         }
       }      
     }
-
+    &.active {
+      left:0;
+    }
   }
   .carousel-control {
     background-image:none;
@@ -478,14 +480,18 @@
     text-transform: uppercase; 
     margin:3rem 0 5rem;
   }
-  .productMasonry {
-    column-count:1;
-  }  
+  .productGrid {
+    li {
+      width:100%;
+    }
+  }
 }
 @media (min-width:750px) {
   .home-page-products {
-    .productMasonry {
-      column-count:3;
+    .productGrid {
+      li {
+        width:33.3333%;
+      }
     }
   }
 }
@@ -493,8 +499,10 @@
 @media (min-width:992px) { 
 
   .home-page-products {
-    .productMasonry {
-      column-count:4;
+    .productGrid {
+      li {
+        width:25%;
+      }
     }
   }
   .cta-wrapper {
