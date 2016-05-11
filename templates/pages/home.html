@@ -20,47 +20,18 @@ blog:
     {{#each shipping_messages}}
         {{> components/common/alert-info message}}
     {{/each}}
-  <div id="home-carousel" class="carousel slide" data-ride="carousel">
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class='carousel-content fallwinter-2015 carousel-active'>
-            <a href="/fall-winter/">
-                <div class="fallwinter-banner">
-                    <div class="slide-content">
-                        <h2 class="league">The FW Collection!</h2>
-                        <div class="button slider-button collection"><a href="/shop">Shop Now</a></div>
-                    </div>
-                </div>
-            </a>
-        </div>  
-      </div>
-      <div class="item">
-        <div class='carousel-content shop-womens'>
-            <div class="slide-content">
-                <h2 class="league">Women's</h2>
-                <div class="button slider-button collection"><a href="/womens">Shop Now</a></div>
-            </div>
-        </div>       
-      </div>
-      <div class="item">
-        <div class='carousel-content shop-mens'>
-            <div class="slide-content">
-                <h2 class="league">Men's</h2>
-                <div class="button slider-button collection"><a href="/mens">Shop Now</a></div>
-            </div>              
-        </div>
+<div class="home-banner">
+  <a href="/fall-winter/">
+    <div class="banner-content">
+      <div class="fallwinter-banner">
+          <div class="slide-content">
+              <h2 class="league">The FW Collection!</h2>
+              <div class="button slider-button collection"><a href="/shop">Shop Now</a></div>
+          </div>
       </div>
     </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <i class="fa fa-angle-left"></i>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <i class="fa fa-angle-right"></i>
-    </a>
-  </div>
+  </a>
+</div>
 
   <div class="row cta-wrapper hidden-xs clearfix">
     <div class="col-md-10 col-md-offset-1 col-sm-12">
