@@ -164,10 +164,11 @@
 @media (min-width:992px) {
     // TT Styles 
     .productView {
-       margin-top:$header-height;
-       .productView-rating {
         display: none;
-       }
+        margin-top:$header-height;
+        .productView-rating {
+            
+        }
         .productView-details {
             text-align: right;
             width: 80%;
@@ -182,15 +183,14 @@
          }
         }
         .productView-options {
-
-        }
-        .productView-options {
             text-align:right;
             .form-field,
             .form-action {
                 float: right;
             }
-
+            .form-action {
+                margin-top:0;
+            }               
         }
         .productView-product {
             padding-bottom:0;
@@ -270,7 +270,8 @@
             }
             .button{
                 margin-right:0;
-            }        
+            }
+ 
         }
         .productView-price {
             font-family: $robot;
@@ -306,4 +307,12 @@
             text-transform: uppercase;
         }
     }
+
 }
+
+
+    .productView-options {
+        .form-action {
+            margin-top:0;
+        }
+    }

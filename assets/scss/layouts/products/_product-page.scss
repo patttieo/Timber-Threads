@@ -1,7 +1,10 @@
 // TT Styles 
 .productView {
+    margin:0;
    margin-top:$header-height;
-
+    .breadcrumbs {
+        display: none;
+    }
    .productView-rating {
     display: none;
    }
@@ -157,6 +160,25 @@
         font-family: $league;
         text-transform: uppercase;
     }
+    .productCarousel-slide {
+        text-align: center;
+        .card-body {
+            font-family: $default;
+            h4 {
+                a {
+                    font-size:1rem;
+                    min-height:2.5em;
+                    display: block;
+                    font-family: $default;
+                    color:$red;
+                }
+            }
+            .card-text {
+                color:#000;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
@@ -164,7 +186,48 @@
 @media (min-width:992px) {
     // TT Styles 
     .productView {
-       margin-top:$header-height;
+
+       margin-top:10rem;
+       .breadcrumbs {
+        display: block;
+        text-align: right;
+           .breadcrumb {
+                margin:0;
+                background:none;
+                padding:0;
+                position:relative;
+                padding-right: 0.5rem;
+                padding-left:0.7rem;
+                &.is-active {
+                    display: none;
+                }
+                a {
+                    text-transform: uppercase;
+                    color:$red;
+                    font-family: $default;
+                    font-size:1rem;
+                }
+                &:after {
+                    content:"\f054";
+                    font-family: FontAwesome;
+                    position:absolute;
+                    left:100%;
+                    top:0.4rem;
+                    color:#000;
+                    font-size:0.5rem;
+                }
+                &:before {
+                    display: none;
+                }
+                &:nth-last-child(2) {
+                    padding-right:0;
+                    &:after {
+                        display: none;
+                    }
+                }
+           }
+       }
+
        .productView-rating {
         display: none;
        }
@@ -174,6 +237,7 @@
             padding:0;
          .productView-title {
             font-size:4rem;
+            margin-top: 0;
             font-family: $league;
             text-transform: uppercase;
          }   
@@ -261,6 +325,7 @@
             float: right;
             text-align: none;
             padding-top:1rem;
+
             .inline {
                 display: inline-block;
             }
@@ -271,13 +336,15 @@
             .button{
                 margin-right:0;
             }        
+            .form-action {
+                margin-top: 0;
+            }
         }
         .productView-price {
             font-family: $robot;
             color:$red;
             span {
-                position: relative;
-                // top:0.30rem;
+                margin-bottom: 0;
                 margin-right:1rem;
             }
 
@@ -286,6 +353,7 @@
             float: right;
             position: relative;
             top:0.20rem;
+            margin-bottom: 1rem;
             label {
                 font-family:$robot;
                 position: relative;

@@ -1,5 +1,5 @@
 .lookbook-wrapper {
-
+  min-height: 100vh;
   width: 100%;
   .lb-images {
     a { text-decoration:none; width:100%; height:100%; display:block; color:#000; }
@@ -7,7 +7,7 @@
   }
 
   h2 { 
-      font-size:60px;
+      font-size:6rem;
       text-transform: uppercase;
       color:#fff; 
       line-height: 1;
@@ -17,8 +17,9 @@
 
   button {
     background:none;
-    border:3px solid #fff;
+    border:1px solid #fff;
     color:#fff;
+    font-size:1rem;
   }
 
   .lb-bg {
@@ -45,18 +46,19 @@
     z-index: 3;
     width:100%;
     height:25vh;
-    border-bottom: 1px #fff solid; 
+    border-bottom:1px solid #fff;
+
     .titles {
       position: absolute;
-      top:50%;
+      top:30%;
       font-size:14px;
       padding:2%;
       transition: all 0.2s ease-in-out;
-      opacity:0.5; 
-
+      opacity:1; 
       color:#000;
       h2 {
-        font-size:30px;
+        font-family: $league;
+        font-size:3rem;
       }
     }   
   }
@@ -112,9 +114,10 @@
     .lookbooks {
       position: relative;
       z-index: 3;
-      width:25%;
+      width:33.333%;
       height:100vh;
       float:left;
+      border:none;
       border-right: 1px #fff solid; 
       .titles {
         position: absolute;
@@ -122,16 +125,17 @@
         font-size:14px;
         padding:2%;
         transition: all 0.2s ease-in-out;
-        opacity:0.5; 
+        opacity:0.5;
+        white-space: pre-line;
+
         h2 {
-          font-size:30px;
+          font-size:4rem;
         }
       }    
       &:hover {
         .titles {
           opacity:1;
         }
-        
       }
     }    
   }

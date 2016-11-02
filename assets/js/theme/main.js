@@ -1,3 +1,4 @@
+
 $( document ).ready(function() {
 
   $(".lookbooks").on("mouseenter", function () {
@@ -23,5 +24,41 @@ $( document ).ready(function() {
   });
 
   $('#home-carousel').carousel();
+
+
+ 
+    function addActive(text) {
+       $('.main-nav a').each(function() {
+           
+          if ( $(this).text() == text ) {
+              $(this).addClass('active');
+          }
+        });
+    }
+    if (window.location.pathname == '/shop' ) {
+        addActive('Shop');
+    }
+    if (window.location.pathname == '/mens/' ) {
+        addActive("Men's");
+    }
+    if (window.location.pathname == '/womens/' ) {
+        addActive("Women's");
+    }
+    if (window.location.pathname == '/fall-winter/' ) {
+        addActive("Fall Winter");
+    }
+    if (window.location.pathname == '/about-us/' ) {
+        addActive("About Us");
+    }
+    if (window.location.pathname == '/lookbooks/' ) {
+        addActive("Lookbooks");
+    }
+    if (window.location.pathname == '/contact-us/' ) {
+        addActive("Contact Us");
+    }
+    if (window.location.pathname == '/blog/' ) {
+        addActive("Blog");
+    }
+
 
 });

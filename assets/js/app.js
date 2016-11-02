@@ -21,6 +21,7 @@ import search from './theme/search';
 import sitemap from './theme/sitemap';
 import subscribe from './theme/subscribe';
 import wishlist from './theme/wishlist';
+import bootstrap from './theme/bootstrap';
 import main from './theme/main';
 
 

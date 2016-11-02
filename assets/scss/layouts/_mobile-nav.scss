@@ -32,7 +32,7 @@
   &.active {
     overflow: hidden;
     height:100%;
-
+    border:0;
   }
   .shopping-cart {
     position:absolute;
@@ -42,6 +42,7 @@
       text-decoration:none;
       font-size: 2rem;
       color:#fff;
+
     }
   }
   .nav-links {
@@ -57,6 +58,18 @@
     height: 100vh;
     bottom: 100%;
     background: rgba(0,0,0,0.90);
+    &:after {
+      content:"";
+      position: absolute;
+      left:0;
+      top:0;
+      height: 100%;
+      width:100%;
+      background: url(../img/banners/home-banner.jpg) no-repeat left;
+      background-position: 32% 50%;
+      background-size:cover;
+      opacity:0.2;
+    }
   }
   .inner-header {
     position:fixed; 
@@ -68,10 +81,16 @@
     position:relative; 
     z-index: 3; 
     border:none;
-    a {
-      font-size:2rem;
+    li {
+      width:100%;
       margin:1rem 0;
+    }
+    a {
+      font-size:1.6rem;
+      padding:0;
       color:#fff;
+      text-decoration: none;
+
     }
   }
   .logo-wrap { 
@@ -93,24 +112,10 @@
       display: block; 
       margin:0 auto; 
       padding-bottom:5px; 
-      width: 13rem; 
+      width: 11rem; 
     }
   } 
-  .main-nav {
-    ul {
-      float: none;
-      text-align:center;
-    }
-    
-    li {
-      float: none;
-      line-height: 50px;
-      margin:0.50rem 0;
-    }
-    a {
-      font-size: 3rem;
-    }
-  }
+
 }
 
 

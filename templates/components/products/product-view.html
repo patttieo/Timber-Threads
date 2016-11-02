@@ -40,6 +40,7 @@
         <div class="col-sm-12 col-md-6 product-details no-pad">
             <section class="productView-details">
                 <div class="productView-product">
+                    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
                     <h1 class="productView-title hidden-sm hidden-xs" {{#if schema}}itemprop="name"{{/if}}>{{product.title}}</h1>
 
                     <h2 class="productView-brand"{{#if schema}} itemprop="brand" itemscope itemtype="http://schema.org/Brand"{{/if}}>

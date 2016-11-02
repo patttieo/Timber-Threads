@@ -21,40 +21,58 @@
     }
   }  
 }
-
-.home-banner {
-  width:100%;
-  height:80vh;
-  background: url(../img/banners/home-banner.jpg) no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  position:relative;
-  a {
-    text-decoration:none; 
-  }
-  .slide-content {
-    position:absolute;
-    top:25%;
-    left:5%;
-    text-align: left;
-    h2 { 
-      white-space:nowrap; 
-      font-size:3.5rem; 
-      color:#000;
-      text-transform:uppercase; 
-    }
-    .collection { 
-      font-size:0.80rem;
-      padding:1rem; 
-      a {
-        color:#fff;
-      }
-    }      
-  }
+.banners {
+  display: none;
 }
+// .home-banner {
+//   width:100%;
+//   height:70vh;
+//   position:relative;
+//   overflow: hidden;
+//   background: url(../img/banners/home-banner.jpg) no-repeat center center;
+//   background-size:cover;
+//   a {
+//     text-decoration:none; 
+//   }
+//   img {
+//     max-width:100%;
+//   }
+//   .video-container {
+//     position: relative;
+//     padding-bottom: 56.25%; /* 16:9 */
+//     padding-top: 25px;
+//     height: 0;
+//     .videoWrapper iframe {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//     }   
+//   }
+//   .slide-content {
+//     position:absolute;
+//     top:25%;
+//     left:5%;
+//     text-align: left;
+//     h2 { 
+//       white-space:nowrap; 
+//       font-size:3.5rem; 
+//       color:#fff;
+//       text-transform:uppercase; 
+//     }
+//     .collection { 
+//       font-size:0.80rem;
+//       padding:1rem; 
+//       a {
+//         color:#fff;
+//       }
+//     }   
+//   }
+// }
 .carousel {
   width:100%; 
-  height:80vh; 
+  height:60vh; 
   position: relative;
   .carousel-inner {
     height: 100%;
@@ -155,6 +173,7 @@
     position:absolute;
     left:0;
     top:0;
+
   }  
   .cta-right {
     height:100%;
@@ -170,6 +189,12 @@
   .bottom-cta {
     &.row {
       height:50%;
+      a {
+        transition:all .25s ease-out;
+        &:hover {
+          opacity:0.7;
+        }
+      }
     }
     .col-sm-6 {
       height: 100%;
@@ -231,6 +256,7 @@
           }    
         }
         .cta-image {
+
           background: url(../img/cta-womens.jpg) no-repeat center center;
           background-size: cover;
         }      
@@ -321,10 +347,28 @@
       background: url(../img/cta-fallwinter-img.jpg) no-repeat center center;
       display: block;
       background-size: cover;
+      
+      .image-overlay {
+        position:absolute;
+        left:0;
+        top:0;
+        background: #000;
+        opacity:0;
+        width:100%;
+        height: 100%;
+        transition:all .25s ease-out;
+      }
+      &:hover {
+        .image-overlay {
+          opacity:0.8;
+        }
+      }
       .cta-title {
         margin-top: 30%;
         text-align: center;
         padding:0.4rem;
+        position:relative;
+        z-index: 5;
         h2 {
           color:#fff;
           font-weight: 200;
@@ -462,12 +506,28 @@
       background: url(../img/cta-fw-img.jpg) no-repeat center center;
       display: block;
       background-size: cover;
+      .image-overlay {
+        position:absolute;
+        left:0;
+        top:0;
+        background: #000;
+        opacity:0;
+        width:100%;
+        height: 100%;
+        transition:all .25s ease-out;
+      }
+      &:hover {
+        .image-overlay {
+          opacity:0.8;
+        }
+      }
       .cta-title {
         position: absolute;
         width:100%;
         top:0;
         text-align: center;
         padding:10px 0;
+        z-index: 5;
         h2 {
 
           color:#fff;
@@ -505,9 +565,9 @@
 }
 
 .home-page-products {
-  padding:4rem 2rem;
+  padding:0;
   h2 {
-    font-size:6rem;
+    font-size:5rem;
     text-transform: uppercase; 
     margin:3rem 0 5rem;
   }
@@ -530,6 +590,10 @@
 @media (min-width:992px) { 
 
   .home-page-products {
+    padding:4rem 2rem;
+    h2 {
+      font-size: 6rem;
+    }
     .productGrid {
       li {
         width:25%;
@@ -547,7 +611,7 @@
     .cta-wrapper-one {
       .cta-right {
         .cta-title {
-          margin-top:50%;
+          margin-top:37%;
         }  
       }
       .cta-title {
@@ -565,6 +629,7 @@
 
   }
   .carousel {
+    height: 100vh;
     .shop-womens   {
         background: url(../img/banners/slide-shop-womens.jpg) no-repeat center center;
         background-size: cover;
