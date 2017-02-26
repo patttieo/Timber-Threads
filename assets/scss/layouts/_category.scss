@@ -73,7 +73,7 @@
       color:$red;     
     }
   }
-  .form-fieldset {
+  .form-group {
     text-transform: uppercase;
     .form-field {
       border:none;
@@ -100,7 +100,6 @@
       }
       &.form-control {
         box-shadow:none;
-        width:auto;
         padding:6px 0;
         border:none;
         border-radius: 0;
@@ -108,6 +107,9 @@
       option {
         padding:0;
         font-size:1rem;
+        &:checked {
+          font-size:5rem;
+        }
       }
     }
   }
@@ -195,15 +197,21 @@
        width: 33.333%;
       }
     }
-    .form-fieldset {
+    .form-group {
       label {
         font-size:1rem;
         display: block;
-        padding:0;
+        padding: 0.40rem 0 0;
         color:$dark-gray;
+        margin:0;
       }
       select {
-        font-size:3rem;
+        option {
+          font-size:1rem;
+          &:checked {
+            font-size:2.3rem;
+          }
+        }
       }
     }
   }

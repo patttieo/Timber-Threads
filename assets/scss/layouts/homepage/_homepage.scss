@@ -110,6 +110,16 @@
         font-size:3.5rem; 
         color:#fff;
         text-transform:uppercase; 
+        span {
+          display:block;
+          font-size:3rem;
+        }
+      }
+      h3 {
+        white-space:nowrap; 
+        font-size:2rem; 
+        color:#fff;
+        text-transform:uppercase; 
       }
       .collection { 
         font-size:0.80rem;
@@ -129,13 +139,13 @@
   }
 
 
-  .fallwinter-2015   {
-      background: url(../img/banners/fallwinter-2015-slide.jpg) no-repeat center center;
+  .thecomeback   {
+      background: url(../img/banners/slide-comeback-collection-mobile.jpg) no-repeat center center;
       background-size: cover;
       background-attachment: fixed;
   }    
   .shop-womens   {
-      background: url(../img/banners/slide-shop-womens-mobile.jpg) no-repeat center center;
+      background: url(../img/banners/slide-shop-womens-2.jpg) no-repeat center center;
       background-size: cover;
       background-attachment: fixed;
   }    
@@ -630,8 +640,14 @@
   }
   .carousel {
     height: 100vh;
+    .thecomeback {
+      background: url(../img/banners/slide-comeback-collection.jpg) no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+
+    }
     .shop-womens   {
-        background: url(../img/banners/slide-shop-womens.jpg) no-repeat center center;
+        background: url(../img/banners/slide-shop-womens-2.jpg) no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
     }    
